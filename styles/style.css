@@ -1,11 +1,11 @@
-.hotdeals__img > img {
+.hotdeals__img>img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-    object-fit: contain;
+  object-fit: contain;
 }
 
 body {
@@ -20,13 +20,13 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin-bottom: 23px;
   background-color: #DBD0CC;
   opacity: 80%;
   border: 1px solid #000;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .hotdeals__img {
@@ -46,11 +46,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 163px 243px 146px 0px;
   padding: 100px 0px;
 }
@@ -73,8 +73,8 @@ body {
 
 .hotdeals__btn {
   -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  -ms-grid-row-align: start;
+  align-self: start;
   margin: 0px 0px 0px 13px;
   font-size: 0.875rem;
   line-height: 1.17;
@@ -83,4 +83,92 @@ body {
   height: 48px;
   text-align: center;
 }
+
 /*# sourceMappingURL=style.css.map */
+
+/* Promo section */
+.promo {
+  position: relative;
+
+  margin-top: 104px;
+}
+
+.promo__text-box {
+  position: absolute;
+
+  width: 545px;
+  height: 338px;
+  left: 147px;
+  top: 109px;
+
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.promo__title {
+
+  text-transform: uppercase;
+}
+
+.promo__button {
+  text-transform: uppercase;
+}
+
+/* Top Rating section */
+.top-rating {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(316px, 2fr));
+  grid-template-rows: 90px repeat(3, minmax(198px, 1fr)) 10vh;
+  gap: 24px;
+  grid-template-areas: "top-rating__title top-rating__title top-rating__title"
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9"
+    ".primary-button .";
+}
+
+.top-rating__title {
+  grid-area: top-rating__title;
+  padding-bottom: 50px;
+}
+
+.top-rating__item .item1 {
+  grid-area: item1;
+}
+
+.top-rating__item .item2 {
+  grid-area: item2;
+}
+
+.top-rating__item .item3 {
+  grid-area: item3;
+}
+
+.top-rating__item .item4 {
+  grid-area: item4;
+}
+
+.top-rating__item .item5 {
+  grid-area: item5;
+}
+
+.top-rating__item .item6 {
+  grid-area: item6;
+}
+
+.top-rating__item .item7 {
+  grid-area: item7;
+}
+
+.top-rating__item .item8 {
+  grid-area: item8;
+}
+
+.top-rating__item .item9 {
+  grid-area: item9;
+}
+
+.primary-button {
+  grid-area: primary-button;
+
+  text-transform: uppercase;
+}
