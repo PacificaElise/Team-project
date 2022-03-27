@@ -4,14 +4,28 @@
     left: 0
     width: 100%
     height: 100%
-    object-fit: contain
+    object-fit: cover
+
+=font($fz, $lh)
+    font-size: $fz
+    line-height: $lh
 
 body
     font-family: "Roboto"
     font-weight: 700
     color: #323334
 
+.wrapper
+    display: grid
+    grid-template-areas: "header" "main" "footer"
+
+.main
+    grid-area: main
+    display: grid
+    grid-template-areas: "screen1" "screen2" "screen3" "screen4" "subscribe"
+
 .hotdeals
+    grid-area: screen1
     min-height: 566px
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(470px, 1fr))
@@ -30,37 +44,46 @@ body
         padding: 100px 0px
 
     &__title
-        font-size: 1.375rem
-        line-height: 1.17
+        +font(1.375rem, 1.17)
+
         text-transform: uppercase
         margin: 0
 
     &__link
+        +font(3rem, 1.17)
+
         text-decoration: none
-        font-size: 3rem
         color: #A86A3D
-        line-height: 1.17
         text-transform: uppercase
         margin: 25px 0px 40px 0px
 
+    &__btn
+        margin: 0px 0px 0px 13px
+
 .block
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     flex-direction: column
 
 .btn
+    +font(0.875rem, 1.17)
+
     align-self: start
-    margin: 0px 0px 0px 13px
-    font-size: 0.875rem
-    line-height: 1.17
     text-transform: uppercase
     width: 124px
     height: 48px
     text-align: center
     background-color: transparent
 
+.btn:hover
+    cursor: pointer
+    box-shadow: inset 10px 10px 20px 10px rgba(0, 0, 0, 0.2)
+
 .hotdeals__img > img
     @extend %ruleimg
+
+.screen2
+    grid-area: screen2
 
 .goods
     margin: 0px 72px 57px 78px
@@ -68,6 +91,7 @@ body
     &__cards
         display: grid
         grid-template-columns: repeat(2, minmax(636px, 1fr))
+        column-gap: 23px
 
     &__card
         background-color: #FAFAFA
@@ -76,7 +100,6 @@ body
 
     &__card_dark
         background-color: #EAE9E7
-        margin-left: 24px
 
     &__img
         position: relative
@@ -85,8 +108,8 @@ body
         margin: 150px 60px 97px 0px
 
     &__title
-        font-size: 1.75rem
-        line-height: 1.17
+        +font(1.75rem, 1.17)
+
         text-transform: uppercase
         margin: 0px
 
@@ -94,4 +117,94 @@ body
         margin: 40px 0px 0px 0px
 
 .goods__img > img
+    @extend %ruleimg
+
+.products
+    margin: 0px 72px 112px 72px
+
+    &__items
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(306px, 1fr))
+        column-gap: 24px
+        grid-row-gap: 55px
+
+    &__item
+        min-height: 566px
+        display: grid
+        grid-template-rows: 75% 25%
+
+    &__img
+        position: relative
+
+    &__item_hover
+        position: relative
+
+    &__hover
+        @extend %ruleimg
+
+        visibility: hidden
+        position: absolute
+        z-index: 2
+        transition: visibility 0.3s linear 0.2s
+
+    &__block
+        margin: 32px 0px
+
+    &__block_hover
+        visibility: hidden
+        position: absolute
+        top: 160px
+        left: 48px
+        right: 48px
+        z-index: 3
+        color: #FFFFFF
+        transition: visibility 0.3s linear 0.2s
+
+    &__btn
+        color: #FFFFFF
+        border-color: #FFFFFF
+
+    &__title
+        +font(1.75rem, 1.17)
+
+        text-transform: uppercase
+        margin: 0
+
+    &__text
+        +font(1rem, 1.375)
+
+        margin: 30px 0px
+
+    &__img_hover
+        grid-row-start: span 2
+
+    &__star
+        background-image: url("../images/star.svg")
+        width: 15px
+        height: 15px
+        display: block
+
+    &__star:hover
+        background-image: url("../images/yellow-star.svg")
+        cursor: pointer
+
+    &__rating
+        display: flex
+        justify-content: start
+        flex-direction: row
+
+    &__item_hover:hover
+        .products__block_hover
+            visibility: visible
+
+        .products__hover
+            visibility: visible
+
+.products__block > a
+    +font(1.125rem, 1.17)
+
+    text-decoration: none
+    color: #323334
+
+.products__img > img
     @extend %ruleimg

@@ -1,539 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2</title>
-    <link rel="stylesheet" href="./styles/style.css"/>
-    <link rel="stylesheet" href="./styles/normalized.css"/>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/normalized.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="header">
-      <div class="header__top-bar">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top-bar">
           <a class="header__top-bar__main-link" href="#">MOODY STUDIO</a>
           <div class="header__top-bar__icons">
-              <input class="header__top-bar__icons__search" type="search">
-              <a class="header__top-bar__icons__account" href=""></a>
-              <a class="header__top-bar__icons__shopping-card" href=""></a>
-              <a class="header__top-bar__icons__favourites" href=""></a>
-              <!-- <hr> -->
+            <input class="header__top-bar__icons__search" type="search" />
+            <a class="header__top-bar__icons__account" href=""></a>
+            <a class="header__top-bar__icons__shopping-card" href=""></a>
+            <a class="header__top-bar__icons__favourites" href=""></a>
+            <!-- <hr> -->
           </div>
-      </div>
-      <nav class="header__nav">
+        </div>
+        <nav class="header__nav">
           <ul class="header__nav__menu">
-              <li class="header__nav__menu__item">HOME</li>
-              <li class="header__nav__menu__item">STORE</li>
-              <li class="header__nav__menu__item">ACCESSORIES</li>
-              <li class="header__nav__menu__item">BRAND</li>
-              <li class="header__nav__menu__item">PAGES</li>
-              <li class="header__nav__menu__item">ABOUT US</li>
-              <li class="header__nav__menu__item">NEWS</li>
-              <li class="header__nav__menu__item">CONTACT US</li>
+            <li class="header__nav__menu__item">HOME</li>
+            <li class="header__nav__menu__item">STORE</li>
+            <li class="header__nav__menu__item">ACCESSORIES</li>
+            <li class="header__nav__menu__item">BRAND</li>
+            <li class="header__nav__menu__item">PAGES</li>
+            <li class="header__nav__menu__item">ABOUT US</li>
+            <li class="header__nav__menu__item">NEWS</li>
+            <li class="header__nav__menu__item">CONTACT US</li>
           </ul>
           <!-- hr -->
-      </nav>
-      <nav class="header__lower-bar">
+        </nav>
+        <nav class="header__lower-bar">
           <ul class="header__lower-bar__menu">
-              <li class="header__lower-bar__menu__item">
-                  <img src="" alt="icon_shipping">
-                  <a href="">FREE SHIPPING</a>
-              </li>
-              <li class="header__lower-bar__menu__item">
-                  <img src="" alt="icon_refund">
-                  <a href="">100% MONEY BACK</a>
-              </li>
-              <li class="header__lower-bar__menu__item">
-                  <img src="" alt="icon_support">
-                  <a href="">SUPPORT 24/7</a>
-              </li>
+            <li class="header__lower-bar__menu__item">
+              <img src="" alt="icon_shipping" />
+              <a href="">FREE SHIPPING</a>
+            </li>
+            <li class="header__lower-bar__menu__item">
+              <img src="" alt="icon_refund" />
+              <a href="">100% MONEY BACK</a>
+            </li>
+            <li class="header__lower-bar__menu__item">
+              <img src="" alt="icon_support" />
+              <a href="">SUPPORT 24/7</a>
+            </li>
           </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <!--Screen1-->
-      <section class="hotdeals">
-        <div class="hotdeals__img">
-          <img src="images/hot-deals-chair.png" alt="chair" />
-        </div>
-        <div class="hotdeals__block block">
-          <h2 class="hotdeals__title">hot deals this week</h2>
-          <a href="#" class="hotdeals__link"> sale up 50% modern furniture</a>
-          <button class="hotdeals__btn btn">view now</button>
-        </div>
-      </section>
-
-      <!--Screen2-->
-      <section class="goods">
-        <div class="goods__cards">
-          <div class="goods__card">
-            <div class="goods__img1">
-              <img src="images/card-chair.png" alt="vintage chair" />
-            </div>
-            <div class="goods__block block">
-              <h1 class="goods__title">iny vintage chair</h1>
-              <button class="goods__btn btn">view details</button>
-            </div>
+        </nav>
+      </header>
+      <main class="main">
+        <!--Screen1-->
+        <section class="hotdeals">
+          <div class="hotdeals__img">
+            <img src="images/hot-deals-chair.png" alt="chair" />
           </div>
-          <div class="goods__card goods__card_dark">
-            <div class="goods__img">
-              <img src="images/card-vase.png" alt="terracota vase" />
-            </div>
-            <div class="goods__block block">
-              <h1 class="goods__title">large terracota vase</h1>
-              <button class="goods__btn btn">view details</button>
-            </div>
+          <div class="hotdeals__block block">
+            <h2 class="hotdeals__title">hot deals this week</h2>
+            <a href="#" class="hotdeals__link"> sale up 50% modern furniture</a>
+            <button class="hotdeals__btn btn">view now</button>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="products">
-        <div class="products__items">
-          <div class="products__item products__item_hover">
-            <img class="products__img" src="images/towel.jpg" alt="towel" />
-            <h1 class="products__title">decor</h1>
-            <div class="products__text">
+        <!--Screen2-->
+        <div class="screen2">
+          <section class="goods">
+            <div class="goods__cards">
+              <div class="goods__card">
+                <div class="goods__img1">
+                  <img src="images/card-chair.png" alt="vintage chair" />
+                </div>
+                <div class="goods__block block">
+                  <h1 class="goods__title">iny vintage chair</h1>
+                  <button class="goods__btn btn">view details</button>
+                </div>
+              </div>
+              <div class="goods__card goods__card_dark">
+                <div class="goods__img">
+                  <img src="images/card-vase.png" alt="terracota vase" />
+                </div>
+                <div class="goods__block block">
+                  <h1 class="goods__title">large terracota vase</h1>
+                  <button class="goods__btn btn">view details</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="products">
+            <div class="products__items">
+              <div class="products__item products__item_hover">
+                <img class="products__hover" src="images/hover.png" alt="#" />
+                <div class="products__img products__img_hover">
+                  <img src="images/glass-vase.jpg" alt="glass vase" />
+                </div>
+                <div class="products__block_hover block">
+                  <h2 class="products__title">decor</h2>
+                  <div class="products__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </div>
+                  <button class="products__btn btn">view all</button>
+                </div>
+              </div>
+
+              <div class="products__item">
+                <div class="products__img">
+                  <img src="images/towel.jpg" alt="towel" />
+                </div>
+                <div class="products__block block">
+                  <a href="#" class="products__name">Linen Beach Towel</a>
+                  <div class="products__rating">
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                  </div>
+                  <div class="products__price">30$</div>
+                </div>
+              </div>
+
+              <div class="products__item">
+                <div class="products__img">
+                  <img src="images/box.jpg" alt="Glass Box" />
+                </div>
+                <div class="products__block block">
+                  <a href="#" class="products__name">Square Clear Glass Box</a>
+                  <div class="products__rating">
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                  </div>
+                  <div class="products__price">30$</div>
+                </div>
+              </div>
+
+              <div class="products__item">
+                <div class="products__img">
+                  <img src="images/plates.jpg" alt="Ceramic Plates" />
+                </div>
+                <div class="products__block block">
+                  <a href="#" class="products__name"
+                    >4-pack Small Ceramic Plates
+                  </a>
+                  <div class="products__rating">
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                  </div>
+                  <div class="products__price">30$</div>
+                </div>
+              </div>
+
+              <div class="products__item">
+                <div class="products__img">
+                  <img src="images/large-box.jpg" alt="Large Glass Box" />
+                </div>
+                <div class="products__block block">
+                  <a href="#" class="products__name">Large Clear Glass Box </a>
+                  <div class="products__rating">
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                  </div>
+                  <div class="products__price">30$</div>
+                </div>
+              </div>
+
+              <div class="products__item">
+                <div class="products__img">
+                  <img src="images/place-mat.jpg" alt="Placemat" />
+                </div>
+                <div class="products__block block">
+                  <a href="#" class="products__name">Round Jute Placemat </a>
+                  <div class="products__rating">
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                  </div>
+                  <div class="products__price">30$</div>
+                </div>
+              </div>
+
+              <div class="products__item">
+                <div class="products__img">
+                  <img src="images/metal-basket.jpg" alt="Metal Basket" />
+                </div>
+                <div class="products__block block">
+                  <a href="#" class="products__name">Metal Wire Basket</a>
+                  <div class="products__rating">
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                    <a class="products__star"> </a>
+                  </div>
+                  <div class="products__price">30$</div>
+                </div>
+              </div>
+
+              <div class="products__item products__item_hover">
+                <img class="products__hover" src="images/hover.png" alt="#" />
+                <div class="products__img products__img_hover">
+                  <img src="images/basket.jpg" alt="Basket" />
+                </div>
+                <div class="products__block_hover block">
+                  <h2 class="products__title">decor</h2>
+                  <div class="products__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </div>
+                  <button class="products__btn btn">view all</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Promo section ('bedsheet sets' title) -->
+        <section class="promo">
+          <img src="./images/promo-banner.jpg" alt="promo" />
+          <div class="promo__text-box">
+            <h3 class="promo__title">bedsheet sets</h3>
+            <div class="promo__price">
+              $50.00<span class="promo__price-old">$220.00</span>
+            </div>
+            <p class="promo__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div>
-            <button class="products__btn">view all</button>
+              eiusmod tempor.
+            </p>
+            <button class="promo__button secondary-button">view details</button>
           </div>
+        </section>
 
-          <div class="products__item">
-            <img class="products__img" src="images/towel.jpg" alt="towel" />
-            <a href="#" class="products__name">Linen Beach Towel</a>
-            <div class="products__rating">
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-            </div>
-            <div class="products__price">30$</div>
-          </div>
-
-          <div class="products__item">
-            <img class="products__img" src="images/box.jpg" alt="Glass Box" />
-            <a href="#" class="products__name">Square Clear Glass Box</a>
-            <div class="products__rating">
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-            </div>
-            <div class="products__price">30$</div>
-          </div>
-
-          <div class="products__item">
-            <img
-              class="products__img"
-              src="images/plates.jpg"
-              alt="Ceramic Plates"
-            />
-            <a href="#" class="products__name">4-pack Small Ceramic Plates </a>
-            <div class="products__rating">
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-            </div>
-            <div class="products__price">30$</div>
-          </div>
-
-          <div class="products__item">
-            <img
-              class="products__img"
-              src="images/large-box.jpg"
-              alt="Large Glass Box
-            "
-            />
-            <a href="#" class="products__name">Large Clear Glass Box </a>
-            <div class="products__rating">
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-            </div>
-            <div class="products__price">30$</div>
-          </div>
-
-          <div class="products__item">
-            <img
-              class="products__img"
-              src="images/place-mat.jpg"
-              alt="Placemat
-            "
-            />
-            <a href="#" class="products__name">Round Jute Placemat </a>
-            <div class="products__rating">
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-            </div>
-            <div class="products__price">30$</div>
-          </div>
-
-          <div class="products__item">
-            <img class="products__img" src="images/basket.jpg" alt="Basket" />
-            <a href="#" class="products__name">Metal Wire Basket</a>
-            <div class="products__rating">
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-              <img
-                class="products__star"
-                src="images/star.svg"
-                alt="star rating"
-              />
-            </div>
-            <div class="products__price">30$</div>
-          </div>
-
-          <div class="products__item products__item_hover">
-            <img class="products__img" src="images/towel.jpg" alt="towel" />
-            <h1 class="products__title">decor</h1>
-            <div class="products__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div>
-            <button class="products__btn">view all</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Promo section ('bedsheet sets' title) -->
-      <section class="promo">
-        <img src="./images/promo-banner.jpg" alt="promo">
-        <div class="promo__text-box">
-          <h3 class="promo__title">bedsheet sets</h3>
-          <div class="promo__price">$50.00<span class="promo__price-old">$220.00</span>
-          </div>
-          <p class="promo__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          <button class="promo__button secondary-button">view details</button>
-        </div>
-      </section>
-
-      <!-- Top Rating section -->
-      <section class="top-rating">
-        <h2 class="top-rating__title">top rating</h2>
-        <!-- top-rating item 1 -->
-        <div class="top-rating__item item1">
-          <img src="./images/tray-with-foot.jpg" alt="Tray with Foot">
-          <div class="top-rating__item-details">
-            <p class="top-rating__item-name">Tray with Foot</p>
-            <div class="top-rating__item-rating">
-                <input type="radio" id="star-5" name="rating" value="5">
-                <label for="star-5" title="Оценка «5»"></label>
-                <input type="radio" id="star-4" name="rating" value="4">
-                <label for="star-4" title="Оценка «4»"></label>
-                <input type="radio" id="star-3" name="rating" value="3">
-                <label for="star-3" title="Оценка «3»"></label>
-                <input type="radio" id="star-2" name="rating" value="2">
-                <label for="star-2" title="Оценка «2»"></label>
-                <input type="radio" id="star-1" name="rating" value="1">
-                <label for="star-1" title="Оценка «1»"></label>
-            </div>
-            <p class="top-rating__item-price">30$</p>
-          </div>
-        </div>
-        <!-- top-rating item 2 -->
-        <div class="top-rating__item item2">
-          <img src="./images/seat-cushion.jpg" alt="Twill Seat Cushion">
-          <div class="top-rating__item-details">
-            <p class="top-rating__item-name">Twill Seat Cushion</p>
-            <div class="top-rating__item-rating">
-                <input type="radio" id="star-5" name="rating" value="5">
-                <label for="star-5" title="Оценка «5»"></label>	
-                <input type="radio" id="star-4" name="rating" value="4">
-                <label for="star-4" title="Оценка «4»"></label>    
-                <input type="radio" id="star-3" name="rating" value="3">
-                <label for="star-3" title="Оценка «3»"></label>  
-                <input type="radio" id="star-2" name="rating" value="2">
-                <label for="star-2" title="Оценка «2»"></label>    
-                <input type="radio" id="star-1" name="rating" value="1">
-                <label for="star-1" title="Оценка «1»"></label>
-            </div>
-            <p class="top-rating__item-price">30$</p>
-          </div>
-        </div>
-        <!-- top-rating item 3 -->
-        <div class="top-rating__item item3">
-          <img src="./images/fluted-glass.jpg" alt="Fluted Beverage Glass">
-          <div class="top-rating__item-details">
-            <p class="top-rating__item-name">Fluted Beverage
-              Glass</p>
-            <div class="top-rating__item-rating">
-                <input type="radio" id="star-5" name="rating" value="5">
-                <label for="star-5" title="Оценка «5»"></label>	
-                <input type="radio" id="star-4" name="rating" value="4">
-                <label for="star-4" title="Оценка «4»"></label>    
-                <input type="radio" id="star-3" name="rating" value="3">
-                <label for="star-3" title="Оценка «3»"></label>  
-                <input type="radio" id="star-2" name="rating" value="2">
-                <label for="star-2" title="Оценка «2»"></label>    
-                <input type="radio" id="star-1" name="rating" value="1">
-                <label for="star-1" title="Оценка «1»"></label>
-            </div>
-            <p class="top-rating__item-price">30$</p>
-          </div>
-        </div>
-        <!-- top-rating item 4 -->
-        <div class="top-rating__item item4">
-            <img src="./images/egg-cup.jpg" alt="Ceramic
-            Egg Cup">
+        <!-- Top Rating section -->
+        <section class="top-rating">
+          <h2 class="top-rating__title">top rating</h2>
+          <!-- top-rating item 1 -->
+          <div class="top-rating__item item1">
+            <img src="./images/tray-with-foot.jpg" alt="Tray with Foot" />
             <div class="top-rating__item-details">
-              <p class="top-rating__item-name">Ceramic
-                Egg Cup</p>
+              <p class="top-rating__item-name">Tray with Foot</p>
               <div class="top-rating__item-rating">
-                  <input type="radio" id="star-5" name="rating" value="5">
-                  <label for="star-5" title="Оценка «5»"></label>	
-                  <input type="radio" id="star-4" name="rating" value="4">
-                  <label for="star-4" title="Оценка «4»"></label>    
-                  <input type="radio" id="star-3" name="rating" value="3">
-                  <label for="star-3" title="Оценка «3»"></label>  
-                  <input type="radio" id="star-2" name="rating" value="2">
-                  <label for="star-2" title="Оценка «2»"></label>    
-                  <input type="radio" id="star-1" name="rating" value="1">
-                  <label for="star-1" title="Оценка «1»"></label>
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="Оценка «1»"></label>
               </div>
               <p class="top-rating__item-price">30$</p>
             </div>
-        </div>
-        <!-- top-rating item 5 -->
-        <div class="top-rating__item item5">
-          <img src="./images/small-bamboo-box.jpg" alt="Small Bamboo Box">
-          <div class="top-rating__item-details">
-            <p class="top-rating__item-name">Small
-              Bamboo Box</p>
-            <div class="top-rating__item-rating">
-                <input type="radio" id="star-5" name="rating" value="5">
-                <label for="star-5" title="Оценка «5»"></label>	
-                <input type="radio" id="star-4" name="rating" value="4">
-                <label for="star-4" title="Оценка «4»"></label>    
-                <input type="radio" id="star-3" name="rating" value="3">
-                <label for="star-3" title="Оценка «3»"></label>  
-                <input type="radio" id="star-2" name="rating" value="2">
-                <label for="star-2" title="Оценка «2»"></label>    
-                <input type="radio" id="star-1" name="rating" value="1">
+          </div>
+          <!-- top-rating item 2 -->
+          <div class="top-rating__item item2">
+            <img src="./images/seat-cushion.jpg" alt="Twill Seat Cushion" />
+            <div class="top-rating__item-details">
+              <p class="top-rating__item-name">Twill Seat Cushion</p>
+              <div class="top-rating__item-rating">
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
                 <label for="star-1" title="Оценка «1»"></label>
+              </div>
+              <p class="top-rating__item-price">30$</p>
             </div>
-            <p class="top-rating__item-price">30$</p>
           </div>
-        </div>
-      <!-- top-rating item 6 -->
-        <div class="top-rating__item item6">
-          <img src="./images/metal-cutlery-busket.jpg" alt="Metal Cutlery
-        Basket">
-          <div class="top-rating__item-details">
-            <p class="top-rating__item-name">Metal Cutlery
-            Basket</p>
-            <div class="top-rating__item-rating">
-              <input type="radio" id="star-5" name="rating" value="5">
-              <label for="star-5" title="Оценка «5»"></label>	
-              <input type="radio" id="star-4" name="rating" value="4">
-              <label for="star-4" title="Оценка «4»"></label>    
-              <input type="radio" id="star-3" name="rating" value="3">
-              <label for="star-3" title="Оценка «3»"></label>  
-              <input type="radio" id="star-2" name="rating" value="2">
-              <label for="star-2" title="Оценка «2»"></label>    
-              <input type="radio" id="star-1" name="rating" value="1">
-              <label for="star-1" title="Оценка «1»"></label>
+          <!-- top-rating item 3 -->
+          <div class="top-rating__item item3">
+            <img src="./images/fluted-glass.jpg" alt="Fluted Beverage Glass" />
+            <div class="top-rating__item-details">
+              <p class="top-rating__item-name">Fluted Beverage Glass</p>
+              <div class="top-rating__item-rating">
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="Оценка «1»"></label>
+              </div>
+              <p class="top-rating__item-price">30$</p>
             </div>
-            <p class="top-rating__item-price">30$</p>
           </div>
-        </div>
-        <!-- top-rating item 7 -->
-        <div class="top-rating__item item7">
-          <img src="./images/4-pack-cups.jpg" alt="4-pack Ceramic
-        Cups">
-          <div class="top-rating__item-details">
-            <p class="top-rating__item-name">4-pack Ceramic
-            Cups</p>
-            <div class="top-rating__item-rating">
-              <input type="radio" id="star-5" name="rating" value="5">
-              <label for="star-5" title="Оценка «5»"></label>	
-              <input type="radio" id="star-4" name="rating" value="4">
-              <label for="star-4" title="Оценка «4»"></label>    
-              <input type="radio" id="star-3" name="rating" value="3">
-              <label for="star-3" title="Оценка «3»"></label>  
-              <input type="radio" id="star-2" name="rating" value="2">
-              <label for="star-2" title="Оценка «2»"></label>    
-              <input type="radio" id="star-1" name="rating" value="1">
-              <label for="star-1" title="Оценка «1»"></label>
+          <!-- top-rating item 4 -->
+          <div class="top-rating__item item4">
+            <img
+              src="./images/egg-cup.jpg"
+              alt="Ceramic
+            Egg Cup"
+            />
+            <div class="top-rating__item-details">
+              <p class="top-rating__item-name">Ceramic Egg Cup</p>
+              <div class="top-rating__item-rating">
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="Оценка «1»"></label>
+              </div>
+              <p class="top-rating__item-price">30$</p>
             </div>
-            <p class="top-rating__item-price">30$</p>
           </div>
-        </div>
-        <!-- top-rating item 8 -->
-        <div class="top-rating__item item8">
-          <img src="./images/2-pack-linen-napkins.jpg" alt="2-pack Linen
-        Napkins">
-          <div class="top-rating__item-details">
-            <p class="top-rating__item-name">2-pack Linen
-            Napkins</p>
-            <div class="top-rating__item-rating">
-              <input type="radio" id="star-5" name="rating" value="5">
-              <label for="star-5" title="Оценка «5»"></label>	
-              <input type="radio" id="star-4" name="rating" value="4">
-              <label for="star-4" title="Оценка «4»"></label>    
-              <input type="radio" id="star-3" name="rating" value="3">
-              <label for="star-3" title="Оценка «3»"></label>  
-              <input type="radio" id="star-2" name="rating" value="2">
-              <label for="star-2" title="Оценка «2»"></label>    
-              <input type="radio" id="star-1" name="rating" value="1">
-              <label for="star-1" title="Оценка «1»"></label>
+          <!-- top-rating item 5 -->
+          <div class="top-rating__item item5">
+            <img src="./images/small-bamboo-box.jpg" alt="Small Bamboo Box" />
+            <div class="top-rating__item-details">
+              <p class="top-rating__item-name">Small Bamboo Box</p>
+              <div class="top-rating__item-rating">
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="Оценка «1»"></label>
+              </div>
+              <p class="top-rating__item-price">30$</p>
             </div>
-            <p class="top-rating__item-price">30$</p>
           </div>
-        </div>
-      <!-- top-rating item 9 -->
-        <div class="top-rating__item item9">
-          <img src="./images/glazed-stoneware-plate.jpg" alt="Glazed Stoneware
-        Plate">
-          <div class="top-rating__item-details">
-            <p class="top-rating__item-name">Glazed Stoneware
-            Plate</p>
-            <div class="top-rating__item-rating">
-              <input type="radio" id="star-5" name="rating" value="5">
-              <label for="star-5" title="Оценка «5»"></label>	
-              <input type="radio" id="star-4" name="rating" value="4">
-              <label for="star-4" title="Оценка «4»"></label>    
-              <input type="radio" id="star-3" name="rating" value="3">
-              <label for="star-3" title="Оценка «3»"></label>  
-              <input type="radio" id="star-2" name="rating" value="2">
-              <label for="star-2" title="Оценка «2»"></label>    
-              <input type="radio" id="star-1" name="rating" value="1">
-              <label for="star-1" title="Оценка «1»"></label>
+          <!-- top-rating item 6 -->
+          <div class="top-rating__item item6">
+            <img
+              src="./images/metal-cutlery-busket.jpg"
+              alt="Metal Cutlery
+        Basket"
+            />
+            <div class="top-rating__item-details">
+              <p class="top-rating__item-name">Metal Cutlery Basket</p>
+              <div class="top-rating__item-rating">
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="Оценка «1»"></label>
+              </div>
+              <p class="top-rating__item-price">30$</p>
             </div>
-            <p class="top-rating__item-price">30$</p>
           </div>
-        </div>
-        <button class="primary-button">load more products</button>
-      </section>
-    </main>
+          <!-- top-rating item 7 -->
+          <div class="top-rating__item item7">
+            <img
+              src="./images/4-pack-cups.jpg"
+              alt="4-pack Ceramic
+        Cups"
+            />
+            <div class="top-rating__item-details">
+              <p class="top-rating__item-name">4-pack Ceramic Cups</p>
+              <div class="top-rating__item-rating">
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="Оценка «1»"></label>
+              </div>
+              <p class="top-rating__item-price">30$</p>
+            </div>
+          </div>
+          <!-- top-rating item 8 -->
+          <div class="top-rating__item item8">
+            <img
+              src="./images/2-pack-linen-napkins.jpg"
+              alt="2-pack Linen
+        Napkins"
+            />
+            <div class="top-rating__item-details">
+              <p class="top-rating__item-name">2-pack Linen Napkins</p>
+              <div class="top-rating__item-rating">
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="Оценка «1»"></label>
+              </div>
+              <p class="top-rating__item-price">30$</p>
+            </div>
+          </div>
+          <!-- top-rating item 9 -->
+          <div class="top-rating__item item9">
+            <img
+              src="./images/glazed-stoneware-plate.jpg"
+              alt="Glazed Stoneware
+        Plate"
+            />
+            <div class="top-rating__item-details">
+              <p class="top-rating__item-name">Glazed Stoneware Plate</p>
+              <div class="top-rating__item-rating">
+                <input type="radio" id="star-5" name="rating" value="5" />
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="Оценка «1»"></label>
+              </div>
+              <p class="top-rating__item-price">30$</p>
+            </div>
+          </div>
+          <button class="primary-button">load more products</button>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
