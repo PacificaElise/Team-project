@@ -208,3 +208,122 @@ body
 
 .products__img > img
     @extend %ruleimg
+
+// promo banner
+.promo
+    position: relative
+    &__text-box
+        position: absolute
+
+        width: 545px
+        height: 338px
+        left: 147px
+        top: 109px
+
+        background: rgba(255, 255, 255, 0.9)
+
+    &__text-wrapper
+        width: 312px
+        height: 217px
+        margin-top: 61px
+        margin-left: 130px
+        margin-right: 103px
+        margin-bottom: 60px
+
+    &__title
+        padding: 0
+        margin: 0
+
+        font-size: 1.75rem
+        font-weight: 700
+        text-transform: uppercase
+
+    &__description
+        margin-top: 16px
+        margin-bottom: 16px
+
+        font-size: 1rem
+        line-height: 1.375rem
+        font-weight: 300
+        color: #323334
+
+    &__button
+        height: 48px
+
+        font-weight: 700
+        font-size: 0.875rem
+        text-transform: uppercase
+
+    &__link
+        font-size: 0.875rem
+        font-weight: 700
+        text-decoration: none
+        color: #323334
+
+    &__button:hover
+        background-color: #323334
+        color: #FFFFFF
+        border: 0
+
+    &__price
+        margin-top: 27px
+
+        font-size: 1.75rem
+        font-weight: 700
+        color: #7B5136
+
+    &__price-old
+        position: relative
+
+        display: inline-block
+
+        bottom: 0.2rem
+        line-height: 1.19rem
+        padding-left: 26px
+
+        font-size: 1rem
+        text-decoration: line-through
+
+    // Top rating section
+.top-rating
+    display: grid
+    grid-template-columns: repeat(3, minmax(316px, 2fr))
+    grid-template-rows: 90px repeat(3, minmax(198px, 1fr)) 10vh
+    gap: 24px
+    grid-template-areas: "top-rating__title top-rating__title top-rating__title" "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" ".primary-button ."
+
+    &__title
+        grid-area: top-rating__title
+        padding-bottom: 50px
+
+    &__item
+        .item1
+            grid-area: item1
+
+        .item2
+            grid-area: item2
+
+        .item3
+            grid-area: item3
+
+        .item4
+            grid-area: item4
+
+        .item5
+            grid-area: item5
+
+        .item6
+            grid-area: item6
+
+        .item7
+            grid-area: item7
+
+        .item8
+            grid-area: item8
+
+        .item9
+            grid-area: item9
+
+    .primary-button
+        grid-area: primary-button
+        text-transform: uppercase
