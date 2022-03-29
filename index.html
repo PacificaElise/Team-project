@@ -14,46 +14,74 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- header -->
       <header class="header">
-        <div class="header__top-bar">
-          <a class="header__top-bar__main-link" href="#">MOODY STUDIO</a>
-          <div class="header__top-bar__icons">
-            <input class="header__top-bar__icons__search" type="search" />
-            <a class="header__top-bar__icons__account" href=""></a>
-            <a class="header__top-bar__icons__shopping-card" href=""></a>
-            <a class="header__top-bar__icons__favourites" href=""></a>
-            <!-- <hr> -->
+        <header class="header">
+          <div class="top-bar"> 
+              <div class="main-title">
+                  <a class="main-title__link" href="#">MOODY STUDIO</a>
+              </div>
+              <div class="top-bar__icons">
+                  <a class="top-bar__link" href="#">
+                      <img class="top-bar__icon" src="images/search.svg" alt="icon_search">
+                  </a>
+                  <a class="top-bar__link" href="#">
+                      <img class="top-bar__icon" src="images/account.svg" alt="icon_account">
+                  </a>
+                  <a class="top-bar__link" href="#">
+                      <img class="top-bar__icon" src="images/shopping-cart.svg" alt="icon_shopping-cart">
+                  </a>
+                  <a class="top-bar__link" href="#">
+                      <img class="top-bar__icon" src="images/favor.svg" alt="icon_favorite">
+                  </a>
+              </div>
           </div>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__nav__menu">
-            <li class="header__nav__menu__item">HOME</li>
-            <li class="header__nav__menu__item">STORE</li>
-            <li class="header__nav__menu__item">ACCESSORIES</li>
-            <li class="header__nav__menu__item">BRAND</li>
-            <li class="header__nav__menu__item">PAGES</li>
-            <li class="header__nav__menu__item">ABOUT US</li>
-            <li class="header__nav__menu__item">NEWS</li>
-            <li class="header__nav__menu__item">CONTACT US</li>
-          </ul>
-          <!-- hr -->
-        </nav>
-        <nav class="header__lower-bar">
-          <ul class="header__lower-bar__menu">
-            <li class="header__lower-bar__menu__item">
-              <img src="" alt="icon_shipping" />
-              <a href="">FREE SHIPPING</a>
-            </li>
-            <li class="header__lower-bar__menu__item">
-              <img src="" alt="icon_refund" />
-              <a href="">100% MONEY BACK</a>
-            </li>
-            <li class="header__lower-bar__menu__item">
-              <img src="" alt="icon_support" />
-              <a href="">SUPPORT 24/7</a>
-            </li>
-          </ul>
-        </nav>
+          <hr class="hr">
+          <nav class="middle-bar">
+              <ul class="middle-bar__menu">
+                  <li class="middle-bar__item">
+                      <a class="middle-bar__link" href="#">HOME</a>
+                  </li>
+                  <li class="middle-bar__item">
+                      <a class="middle-bar__link" href="#">STORE</a>
+                  </li>
+                  <li class="middle-bar__item">
+                      <a class="middle-bar__link" href="#">ACCESSORIES</a>
+                  </li>
+                  <li class="middle-bar__item">
+                      <a class="middle-bar__link" href="#">BRAND</a>
+                  </li>
+                  <li class="middle-bar__item">
+                      <a class="middle-bar__link" href="#">PAGES</a>
+                  </li>
+                  <li class="middle-bar__item">
+                      <a class="middle-bar__link" href="#">ABOUT US</a>
+                  </li>
+                  <li class="middle-bar__item">
+                      <a class="middle-bar__link" href="#">NEWS</a>
+                  </li>
+                  <li class="middle-bar__item">
+                      <a class="middle-bar__link" href="#">CONTACT US</a>
+                  </li>
+              </ul>
+          </nav>
+          <hr class="hr">
+          <nav class="lower-bar">
+              <ul class="lower-bar__menu">
+                  <li class="lower-bar__item">
+                      <img class="lower-bar__icon" src="images/shipping.svg" alt="icon_shipping">
+                      <a class="lower-bar__link" href="#">FREE SHIPPING</a>
+                  </li>
+                  <li class="">
+                      <img class="lower-bar__icon" src="images/back.svg" alt="icon_refund">
+                      <a class="lower-bar__link" href="#">100% MONEY BACK</a>
+                  </li>
+                  <li class="">
+                      <img class="lower-bar__icon" src="images/support.svg" alt="icon_support">
+                      <a class="lower-bar__link" href="#">SUPPORT 24/7</a>
+                  </li>
+              </ul>
+          </nav>
       </header>
       <main class="main">
         <!--Screen1-->
@@ -456,6 +484,19 @@
           </div>
           <button class="primary-button">load more products</button>
         </section>
+        <!-- Subscribe -->
+        <section class="subscribe">
+          <div class="subscribe__text-block">
+              <h2 class="subscribe__title">SING UP FOR THE NEWSLETTER</h2>
+              <p class="subscribe__text">Subscribe for the latest stories and promotions</p>
+          </div>
+          <form class="subscribe__form">
+              <input class="subscribe__input" type="text" placeholder="Enter your e-mail address">
+              <button class="subscribe__buttom" type="submit">
+                  <img class="subscribe__icon" src="images/subscribe_icon.svg">
+              </button> 
+          </form>
+      </section>
       </main>
     </div>
   </body>
