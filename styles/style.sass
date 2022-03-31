@@ -24,8 +24,10 @@ body
     display: flex
     flex-direction: column
     justify-content: center
+    margin: 0px 72px 0px 72px
 
 .top-bar
+    height: 86px
     display: flex
     justify-content: space-between
     align-items: center
@@ -47,11 +49,16 @@ body
         color: #323334
 
 .middle-bar
+    height: 95px
     border-bottom: 1px solid #323334
+    display: flex
+    flex-direction: column
+    justify-content: center
     &__menu
         display: flex
         flex-direction: row
         justify-content: space-evenly
+        padding-left: 0
     &__item
         list-style-type: none
     &__link
@@ -61,11 +68,16 @@ body
         color: #323334    
 
 .lower-bar
+    height: 78px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
     &__menu
         display: flex
         flex-direction: row
         align-items: flex-end
         justify-content: space-evenly
+        padding-left: 0
     &__item
         list-style-type: none
     &__link
@@ -386,7 +398,7 @@ body
 .subscribe
     grid-area: subscribe
     height: 62px
-    margin-top: 90px
+    margin: 110px 72px 90px 72px
     display: flex
     flex-direction: row
     align-items: flex-end
