@@ -1,10 +1,10 @@
 %ruleimg
     position: absolute
-    top: 0
-    left: 0
+    bottom: 0
+    right: 0
     width: 100%
     height: 100%
-    object-fit: cover
+    object-fit: contain
 
 =font($fz, $lh)
     font-size: $fz
@@ -32,18 +32,21 @@ body
     justify-content: space-between
     align-items: center
     border-bottom: 1px solid #323334
+
     &__icons
         width: 15%
         display: flex
         flex-direction: row
         align-items: flex-end
         justify-content: space-between
+
     &__link
         text-decoration: none
 
 .main-title
     &__link
-        +font (1.75rem, 1.77)
+        +font(1.75rem, 1.77)
+
         text-decoration: none
         text-transform: uppercase
         color: #323334
@@ -54,15 +57,19 @@ body
     display: flex
     flex-direction: column
     justify-content: center
+
     &__menu
         display: flex
         flex-direction: row
         justify-content: space-evenly
         padding-left: 0
+
     &__item
         list-style-type: none
+
     &__link
-        +font (1rem, 1.04)
+        +font(1rem, 1.04)
+
         text-decoration: none
         text-transform: uppercase
         color: #323334
@@ -72,16 +79,20 @@ body
     display: flex
     flex-direction: column
     justify-content: flex-end
+
     &__menu
         display: flex
         flex-direction: row
         align-items: flex-end
         justify-content: space-evenly
         padding-left: 0
+
     &__item
         list-style-type: none
+
     &__link
-        +font (0.75rem, 0.8)
+        +font(0.75rem, 0.8)
+
         text-decoration: none
         text-transform: uppercase
         color: rgba(0, 0, 0, 0.5)
@@ -91,12 +102,13 @@ body
     display: grid
     grid-template-areas: "screen1" "screen2" "screen3" "screen4" "subscribe"
 
+// scree1, screen2
 .hotdeals
     grid-area: screen1
     min-height: 566px
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(470px, 1fr))
-    margin-bottom: 23px
+    margin-bottom: 22px
     background-color: #DBD0CC
     opacity: 80%
     border: 1px solid #000
@@ -144,13 +156,24 @@ body
 
 .btn:hover
     cursor: pointer
-    box-shadow: inset 10px 10px 20px 10px rgba(0, 0, 0, 0.2)
+    background-color: #323334
+    color: #ffff
+    border: 0
+    transition: all 0.2s ease 0.1s
 
 .hotdeals__img > img
     @extend %ruleimg
 
 .screen2
     grid-area: screen2
+
+    &__title
+        +font(1.5rem, 1.17)
+
+        display: none
+        margin: 0
+        text-transform: uppercase
+        margin-left: 26px
 
 .goods
     margin: 0px 72px 57px 78px
@@ -200,8 +223,53 @@ body
         display: grid
         grid-template-rows: 75% 25%
 
+    &__hover-bar
+        position: relative
+        top: 40%
+        left: 0
+        margin: 0 auto
+        visibility: hidden
+        transition: visibility 0.2s ease 0.1s
+        width: 80%
+        height: 20%
+        border-radius: 50px
+        background-color: #ffff
+        overflow: hidden
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2)
+
+    &__tool-bar
+        visibility: hidden
+        position: absolute
+        display: flex
+        justify-content: space-around
+        align-items: end
+        width: 30%
+        top: 47%
+        left: 37%
+        transition: visibility 0.2s ease 0.1s
+
     &__img
         position: relative
+
+    &__img:hover
+        .products__hover-bar
+            visibility: visible
+
+        .products__tool-bar
+            visibility: visible
+
+    &__bag
+        width: 18px
+        height: 20px
+        background-image: url("../images/bag.svg")
+
+    &__like
+        width: 20px
+        height: 20px
+        background-image: url("../images/like-icon.svg")
+
+    &__like:hover
+        background-image: url("../images/red-like.svg")
 
     &__item_hover
         position: relative
@@ -215,7 +283,7 @@ body
         transition: visibility 0.3s linear 0.2s
 
     &__block
-        margin: 32px 0px
+        margin: 32px 0px 15px 0px
 
     &__block_hover
         visibility: hidden
@@ -260,12 +328,22 @@ body
         justify-content: start
         flex-direction: row
 
+    &__price
+        +font(1.5rem, 1.17)
+
+    &__nav
+        display: none
+
     &__item_hover:hover
         .products__block_hover
             visibility: visible
 
         .products__hover
             visibility: visible
+
+input[name*=s]
+    position: absolute
+    visibility: hidden
 
 .products__block > a
     +font(1.125rem, 1.17)
@@ -279,14 +357,13 @@ body
 // promo banner
 .promo
     position: relative
+
     &__text-box
         position: absolute
-
         width: 545px
         height: 338px
         left: 147px
         top: 109px
-
         background: rgba(255, 255, 255, 0.9)
 
     &__text-wrapper
@@ -300,7 +377,6 @@ body
     &__title
         padding: 0
         margin: 0
-
         font-size: 1.75rem
         font-weight: 700
         text-transform: uppercase
@@ -308,7 +384,6 @@ body
     &__description
         margin-top: 16px
         margin-bottom: 16px
-
         font-size: 1rem
         line-height: 1.375rem
         font-weight: 300
@@ -316,7 +391,6 @@ body
 
     &__button
         height: 48px
-
         font-weight: 700
         font-size: 0.875rem
         text-transform: uppercase
@@ -334,24 +408,21 @@ body
 
     &__price
         margin-top: 27px
-
         font-size: 1.75rem
         font-weight: 700
         color: #7B5136
 
     &__price-old
         position: relative
-
         display: inline-block
-
         bottom: 0.2rem
         line-height: 1.19rem
         padding-left: 26px
-
         font-size: 1rem
         text-decoration: line-through
 
     // Top rating section
+
 .top-rating
     display: grid
     grid-template-columns: repeat(3, minmax(316px, 2fr))
@@ -439,7 +510,6 @@ body
         width: 371px
         height: 51px
         margin-top: 87px
-
         font-weight: 700
         font-size: 16px
         line-height: 19px
@@ -447,13 +517,11 @@ body
 
     .like-hover
         position: absolute
-
-        transition: .5s ease
+        transition: 0.5s ease
         opacity: 0
         position: absolute
         top: 30%
         left: 50%
-
         transform: translate(-50%, -50%)
         border: 1px solid black
 
@@ -468,29 +536,41 @@ body
     flex-direction: row
     align-items: flex-end
     justify-content: space-between
+
     &__title
         margin: 0
-        +font (1.75rem, 1.77)
+
+        +font(1.75rem, 1.77)
+
         text-transform: uppercase
         color: #323334
+
     &__text
         margin: 0
+
         +font(1.125rem, 1.17)
+
         font-weight: 400
+
     &__form
         width: 40%
         display: flex
         flex-direction: row
+
     &__input
         width: 100%
         height: 48px
         padding: 0
         border: 1px solid #323334
+
         &::placeholder
             padding-left: 25px
+
             +font(1rem, 1)
+
             font-weight: 400
             color: rgba(0, 0, 0, 0.5)
+
     &__button
         width: 85px
         height: 50px
