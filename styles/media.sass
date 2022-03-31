@@ -1,4 +1,4 @@
-@media (max-width: 376px)
+@media only screen and (max-device-width: 375px)
     %ruleimg
         position: relative
         top: 0
@@ -98,7 +98,7 @@
             transition: all 0.4s ease
 
         &__nav > label:hover
-            opasity: 0.8
+            opacity: 0.8
             transform: scale(1.1)
             background-color: #222222
 
@@ -113,11 +113,6 @@
 
         &__tool-bar
             display: none
-
-    .products__img > img
-        max-width: 100%
-        height: auto
-        object-fut: contain
 
     .products__img > img
         @extend %ruleimg
