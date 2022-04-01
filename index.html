@@ -1,673 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Project 2</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/normalized.css" />
-    <link rel="stylesheet" href="./styles/media.css" />
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/normalized.css"/>
+    <link rel="stylesheet" href="./styles/media.css"/>
+    <link rel="stylesheet" href="./styles/mystyles.css"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
     />
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- header -->
-      <header class="header">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <nav class="navbar navbar-expand bg-light">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+</head>
+<body>
+<div class="wrapper">
+    <!-- header -->
+    <header class="header">
         <div class="top-bar">
-          <div class="main-title">
-            <a class="main-title__link" href="#">MOODY STUDIO</a>
-          </div>
-          <div class="top-bar__icons">
-            <div class="top-bar__search">
-              <input class="top-bar__input" type="email" placeholder="Search...">
-              <a class="top-bar__link_search" href="#">
-                <img
-                  class="top-bar__icon"
-                  src="images/search.svg"
-                  alt="icon_search"
-                />
-              </a>
-          </div>
-            <a class="top-bar__link" href="#">
-              <img
-                class="top-bar__icon"
-                src="images/account.svg"
-                alt="icon_account"
-              />
-            </a>
-            <a class="top-bar__link" href="#">
-              <img
-                class="top-bar__icon"
-                src="images/shopping-cart.svg"
-                alt="icon_shopping-cart"
-              />
-            </a>
-            <a class="top-bar__link" href="#">
-              <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="wishlist" fill-rule="evenodd" clip-rule="evenodd" d="M14.7067 5.0519L13.3886 3.69703C10.2946 0.516668 4.62144 1.61417 2.57351 5.6126C1.61205 7.49324 1.39512 10.2085 3.15075 13.6738C4.84204 17.0104 8.36066 21.007 14.7067 25.3602C21.0527 21.007 24.5695 17.0104 26.2626 13.6738C28.0182 10.2067 27.8031 7.49324 26.8398 5.6126C24.7919 1.61417 19.1187 0.51483 16.0248 3.69519L14.7067 5.0519ZM14.7067 27.5755C-13.4809 8.94922 6.02778 -5.58852 14.3831 2.10133C14.4934 2.20244 14.6019 2.30723 14.7067 2.41569C14.8104 2.30733 14.9183 2.20307 15.0302 2.10317C23.3837 -5.5922 42.8942 8.94738 14.7067 27.5755Z" fill="#323334"/>
-              </svg>
-            </a>
-          </div>
+            <div class="main-title">
+                <a class="main-title__link" href="#">MOODY STUDIO</a>
+            </div>
+            <div class="top-bar__icons">
+                <a class="top-bar__link" href="#">
+                    <img
+                            class="top-bar__icon"
+                            src="images/search.svg"
+                            alt="icon_search"
+                    />
+                </a>
+                <a class="top-bar__link" href="#">
+                    <img
+                            class="top-bar__icon"
+                            src="images/account.svg"
+                            alt="icon_account"
+                    />
+                </a>
+                <a class="top-bar__link" href="#">
+                    <img
+                            class="top-bar__icon"
+                            src="images/shopping-cart.svg"
+                            alt="icon_shopping-cart"
+                    />
+                    <img class="top-bar__icon" src=""
+                </a>
+                <a class="top-bar__link" href="#">
+                    <img
+                            class="top-bar__icon"
+                            src="images/favor.svg"
+                            alt="icon_favorite"
+                    />
+                </a>
+            </div>
         </div>
         <nav class="middle-bar">
-          <ul class="middle-bar__menu">
-            <li class="middle-bar__item">
-              <a class="middle-bar__link" href="#">HOME</a>
-            </li>
-            <li class="middle-bar__item">
-              <a class="middle-bar__link" href="#">STORE</a>
-            </li>
-            <li class="middle-bar__item">
-              <a class="middle-bar__link" href="#">ACCESSORIES</a>
-            </li>
-            <li class="middle-bar__item">
-              <a class="middle-bar__link" href="#">BRAND</a>
-            </li>
-            <li class="middle-bar__item">
-              <a class="middle-bar__link" href="#">PAGES</a>
-            </li>
-            <li class="middle-bar__item">
-              <a class="middle-bar__link" href="#">ABOUT US</a>
-            </li>
-            <li class="middle-bar__item">
-              <a class="middle-bar__link" href="#">NEWS</a>
-            </li>
-            <li class="middle-bar__item">
-              <a class="middle-bar__link" href="#">CONTACT US</a>
-            </li>
-          </ul>
+            <ul class="middle-bar__menu">
+                <li class="middle-bar__item">
+                    <a class="middle-bar__link" href="#">HOME</a>
+                </li>
+                <li class="middle-bar__item">
+                    <a class="middle-bar__link" href="#">STORE</a>
+                </li>
+                <li class="middle-bar__item">
+                    <a class="middle-bar__link" href="#">ACCESSORIES</a>
+                </li>
+                <li class="middle-bar__item">
+                    <a class="middle-bar__link" href="#">BRAND</a>
+                </li>
+                <li class="middle-bar__item">
+                    <a class="middle-bar__link" href="#">PAGES</a>
+                </li>
+                <li class="middle-bar__item">
+                    <a class="middle-bar__link" href="#">ABOUT US</a>
+                </li>
+                <li class="middle-bar__item">
+                    <a class="middle-bar__link" href="#">NEWS</a>
+                </li>
+                <li class="middle-bar__item">
+                    <a class="middle-bar__link" href="#">CONTACT US</a>
+                </li>
+            </ul>
         </nav>
         <nav class="lower-bar">
-          <ul class="lower-bar__menu">
-            <li class="lower-bar__item">
-              <img
-                class="lower-bar__icon"
-                src="images/shipping.svg"
-                alt="icon_shipping"
-              />
-              <a class="lower-bar__link" href="#">FREE SHIPPING</a>
-            </li>
-            <li class="lower-bar__item">
-              <img
-                class="lower-bar__icon"
-                src="images/back.svg"
-                alt="icon_refund"
-              />
-              <a class="lower-bar__link" href="#">100% MONEY BACK</a>
-            </li>
-            <li class="lower-bar__item">
-              <img
-                class="lower-bar__icon"
-                src="images/support.svg"
-                alt="icon_support"
-              />
-              <a class="lower-bar__link" href="#">SUPPORT 24/7</a>
-            </li>
-          </ul>
+            <ul class="lower-bar__menu">
+                <li class="lower-bar__item">
+                    <img
+                            class="lower-bar__icon"
+                            src="images/shipping.svg"
+                            alt="icon_shipping"
+                    />
+                    <a class="lower-bar__link" href="#">FREE SHIPPING</a>
+                </li>
+                <li class="lower-bar__item">
+                    <img
+                            class="lower-bar__icon"
+                            src="images/back.svg"
+                            alt="icon_refund"
+                    />
+                    <a class="lower-bar__link" href="#">100% MONEY BACK</a>
+                </li>
+                <li class="lower-bar__item">
+                    <img
+                            class="lower-bar__icon"
+                            src="images/support.svg"
+                            alt="icon_support"
+                    />
+                    <a class="lower-bar__link" href="#">SUPPORT 24/7</a>
+                </li>
+            </ul>
         </nav>
-      </header>
-      <main class="main">
+    </header>
+    <main class="main">
         <!--Screen1-->
         <section class="hotdeals">
-          <div class="hotdeals__img">
-            <img src="images/hot-deals-chair.png" alt="chair" />
-          </div>
-          <div class="hotdeals__block block">
-            <h2 class="hotdeals__title">hot deals this week</h2>
-            <a href="#" class="hotdeals__link"> sale up 50% modern furniture</a>
-            <button class="hotdeals__btn btn">view now</button>
-          </div>
+            <div class="hotdeals__img">
+                <img src="images/hot-deals-chair.png" alt="chair"/>
+            </div>
+            <div class="hotdeals__block block">
+                <h2 class="hotdeals__title">hot deals this week</h2>
+                <a href="#" class="hotdeals__link"> sale up 50% modern furniture</a>
+                <button class="hotdeals__btn btn">view now</button>
+            </div>
         </section>
 
         <!--Screen2-->
         <div class="screen2">
-          <h1 class="screen2__title">hot deals</h1>
-          <section class="goods">
-            <div class="goods__cards">
-              <div class="goods__card">
-                <div class="goods__img">
-                  <img src="images/card-chair.png" alt="vintage chair" />
+            <h1 class="screen2__title">hot deals</h1>
+            <section class="goods">
+                <div class="goods__cards">
+                    <div class="goods__card">
+                        <div class="goods__img">
+                            <img src="images/card-chair.png" alt="vintage chair"/>
+                        </div>
+                        <div class="goods__block block">
+                            <h1 class="goods__title">iny vintage chair</h1>
+                            <button class="goods__btn btn">view details</button>
+                        </div>
+                    </div>
+                    <div class="goods__card goods__card_dark">
+                        <div class="goods__img">
+                            <img src="images/card-vase.png" alt="terracota vase"/>
+                        </div>
+                        <div class="goods__block block">
+                            <h1 class="goods__title">large terracota vase</h1>
+                            <button class="goods__btn btn">view details</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="goods__block block">
-                  <h1 class="goods__title">iny vintage chair</h1>
-                  <button class="goods__btn btn">view details</button>
+            </section>
+
+            <section class="products">
+                <div class="products__wrapper">
+                    <div class="products__slider">
+                        <div class="products__items">
+                            <input type="radio" name="s" id="s1"/>
+                            <input type="radio" name="s" id="s2"/>
+                            <input type="radio" name="s" id="s3"/>
+                            <input type="radio" name="s" id="s4"/>
+                            <input type="radio" name="s" id="s5"/>
+                            <input type="radio" name="s" id="s6"/>
+
+                            <div class="products__item products__item_hover">
+                                <img
+                                        class="products__hover"
+                                        src="images/hover.png"
+                                        alt="#"
+                                />
+                                <div class="products__img products__img_hover">
+                                    <img src="images/glass-vase.jpg" alt="glass vase"/>
+                                </div>
+                                <div class="products__block_hover block">
+                                    <h2 class="products__title">decor</h2>
+                                    <div class="products__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore
+                                        magna aliqua.
+                                    </div>
+                                    <button class="products__btn btn">view all</button>
+                                </div>
+                            </div>
+
+                            <div class="products__item s1">
+                                <div class="products__img">
+                                    <img src="images/towel.jpg" alt="towel"/>
+                                    <div class="products__hover-bar"></div>
+                                    <div class="products__tool-bar">
+                                        <a href="#" class="products__bag"></a>
+                                        <img src="images/line.svg" alt="#"/>
+                                        <a href="#" class="products__like"></a>
+                                    </div>
+                                </div>
+                                <div class="products__block block">
+                                    <a href="#" class="products__name">Linen Beach Towel</a>
+                                    <div class="products__rating">
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                    </div>
+                                    <div class="products__price">30$</div>
+                                </div>
+                            </div>
+
+                            <div class="products__item">
+                                <div class="products__img">
+                                    <img src="images/box.jpg" alt="Glass Box"/>
+                                    <div class="products__hover-bar"></div>
+                                    <div class="products__tool-bar">
+                                        <a href="#" class="products__bag"></a>
+                                        <img src="images/line.svg" alt="#"/>
+                                        <a href="#" class="products__like"></a>
+                                    </div>
+                                </div>
+
+                                <div class="products__block block">
+                                    <a href="#" class="products__name"
+                                    >Square Clear Glass Box</a
+                                    >
+                                    <div class="products__rating">
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                    </div>
+                                    <div class="products__price">30$</div>
+                                </div>
+                            </div>
+
+                            <div class="products__item">
+                                <div class="products__img">
+                                    <img src="images/plates.jpg" alt="Ceramic Plates"/>
+                                    <div class="products__hover-bar"></div>
+                                    <div class="products__tool-bar">
+                                        <a href="#" class="products__bag"></a>
+                                        <img src="images/line.svg" alt="#"/>
+                                        <a href="#" class="products__like"></a>
+                                    </div>
+                                </div>
+
+                                <div class="products__block block">
+                                    <a href="#" class="products__name"
+                                    >4-pack Small Ceramic Plates
+                                    </a>
+                                    <div class="products__rating">
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                    </div>
+                                    <div class="products__price">30$</div>
+                                </div>
+                            </div>
+
+                            <div class="products__item">
+                                <div class="products__img">
+                                    <img src="images/large-box.jpg" alt="Large Glass Box"/>
+                                    <div class="products__hover-bar"></div>
+                                    <div class="products__tool-bar">
+                                        <a href="#" class="products__bag"></a>
+                                        <img src="images/line.svg" alt="#"/>
+                                        <a href="#" class="products__like"></a>
+                                    </div>
+                                </div>
+
+                                <div class="products__block block">
+                                    <a href="#" class="products__name"
+                                    >Large Clear Glass Box
+                                    </a>
+                                    <div class="products__rating">
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                    </div>
+                                    <div class="products__price">30$</div>
+                                </div>
+                            </div>
+
+                            <div class="products__item">
+                                <div class="products__img">
+                                    <img src="images/place-mat.jpg" alt="Placemat"/>
+                                    <div class="products__hover-bar"></div>
+                                    <div class="products__tool-bar">
+                                        <a href="#" class="products__bag"></a>
+                                        <img src="images/line.svg" alt="#"/>
+                                        <a href="#" class="products__like"></a>
+                                    </div>
+                                </div>
+
+                                <div class="products__block block">
+                                    <a href="#" class="products__name"
+                                    >Round Jute Placemat
+                                    </a>
+                                    <div class="products__rating">
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                    </div>
+                                    <div class="products__price">30$</div>
+                                </div>
+                            </div>
+
+                            <div class="products__item">
+                                <div class="products__img">
+                                    <img src="images/metal-basket.jpg" alt="Metal Basket"/>
+                                    <div class="products__hover-bar"></div>
+                                    <div class="products__tool-bar">
+                                        <a href="#" class="products__bag"></a>
+                                        <img src="images/line.svg" alt="#"/>
+                                        <a href="#" class="products__like"></a>
+                                    </div>
+                                </div>
+
+                                <div class="products__block block">
+                                    <a href="#" class="products__name">Metal Wire Basket</a>
+                                    <div class="products__rating">
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                        <a href="#" class="products__star"> </a>
+                                    </div>
+                                    <div class="products__price">30$</div>
+                                </div>
+                            </div>
+
+                            <div class="products__item products__item_hover">
+                                <img
+                                        class="products__hover"
+                                        src="images/hover.png"
+                                        alt="#"
+                                />
+                                <div class="products__img products__img_hover">
+                                    <img src="images/basket.jpg" alt="Basket"/>
+                                </div>
+                                <div class="products__block_hover block">
+                                    <h2 class="products__title">decor</h2>
+                                    <div class="products__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore
+                                        magna aliqua.
+                                    </div>
+                                    <button class="products__btn btn">view all</button>
+                                </div>
+                            </div>
+                            <div class="products__nav">
+                                <label for="s1"></label>
+                                <label for="s2"></label>
+                                <label for="s3"></label>
+                                <label for="s4"></label>
+                                <label for="s5"></label>
+                                <label for="s6"></label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="goods__card goods__card_dark">
-                <div class="goods__img">
-                  <img src="images/card-vase.png" alt="terracota vase" />
-                </div>
-                <div class="goods__block block">
-                  <h1 class="goods__title">large terracota vase</h1>
-                  <button class="goods__btn btn">view details</button>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="products">
-            <div class="products__wrapper">
-              <div class="products__slider">
-                <div class="products__items">
-                  <input type="radio" name="s" id="s1" />
-                  <input type="radio" name="s" id="s2" />
-                  <input type="radio" name="s" id="s3" />
-                  <input type="radio" name="s" id="s4" />
-                  <input type="radio" name="s" id="s5" />
-                  <input type="radio" name="s" id="s6" />
-
-                  <div class="products__item products__item_hover">
-                    <img
-                      class="products__hover"
-                      src="images/hover.png"
-                      alt="#"
-                    />
-                    <div class="products__img products__img_hover">
-                      <img src="images/glass-vase.jpg" alt="glass vase" />
-                    </div>
-                    <div class="products__block_hover block">
-                      <h2 class="products__title">decor</h2>
-                      <div class="products__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                      </div>
-                      <button class="products__btn btn">view all</button>
-                    </div>
-                  </div>
-
-                  <div class="products__item s1">
-                    <div class="products__img">
-                      <img src="images/towel.jpg" alt="towel" />
-                      <div class="products__hover-bar"></div>
-                      <div class="products__tool-bar">
-                        <a href="#" class="products__bag"></a>
-                        <img src="images/line.svg" alt="#" />
-                        <a href="#" class="products__like"></a>
-                      </div>
-                    </div>
-                    <div class="products__block block">
-                      <a href="#" class="products__name">Linen Beach Towel</a>
-                      <div class="products__rating">
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                      </div>
-                      <div class="products__price">30$</div>
-                    </div>
-                  </div>
-
-                  <div class="products__item">
-                    <div class="products__img">
-                      <img src="images/box.jpg" alt="Glass Box" />
-                      <div class="products__hover-bar"></div>
-                      <div class="products__tool-bar">
-                        <a href="#" class="products__bag"></a>
-                        <img src="images/line.svg" alt="#" />
-                        <a href="#" class="products__like"></a>
-                      </div>
-                    </div>
-
-                    <div class="products__block block">
-                      <a href="#" class="products__name"
-                        >Square Clear Glass Box</a
-                      >
-                      <div class="products__rating">
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                      </div>
-                      <div class="products__price">30$</div>
-                    </div>
-                  </div>
-
-                  <div class="products__item">
-                    <div class="products__img">
-                      <img src="images/plates.jpg" alt="Ceramic Plates" />
-                      <div class="products__hover-bar"></div>
-                      <div class="products__tool-bar">
-                        <a href="#" class="products__bag"></a>
-                        <img src="images/line.svg" alt="#" />
-                        <a href="#" class="products__like"></a>
-                      </div>
-                    </div>
-
-                    <div class="products__block block">
-                      <a href="#" class="products__name"
-                        >4-pack Small Ceramic Plates
-                      </a>
-                      <div class="products__rating">
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                      </div>
-                      <div class="products__price">30$</div>
-                    </div>
-                  </div>
-
-                  <div class="products__item">
-                    <div class="products__img">
-                      <img src="images/large-box.jpg" alt="Large Glass Box" />
-                      <div class="products__hover-bar"></div>
-                      <div class="products__tool-bar">
-                        <a href="#" class="products__bag"></a>
-                        <img src="images/line.svg" alt="#" />
-                        <a href="#" class="products__like"></a>
-                      </div>
-                    </div>
-
-                    <div class="products__block block">
-                      <a href="#" class="products__name"
-                        >Large Clear Glass Box
-                      </a>
-                      <div class="products__rating">
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                      </div>
-                      <div class="products__price">30$</div>
-                    </div>
-                  </div>
-
-                  <div class="products__item">
-                    <div class="products__img">
-                      <img src="images/place-mat.jpg" alt="Placemat" />
-                      <div class="products__hover-bar"></div>
-                      <div class="products__tool-bar">
-                        <a href="#" class="products__bag"></a>
-                        <img src="images/line.svg" alt="#" />
-                        <a href="#" class="products__like"></a>
-                      </div>
-                    </div>
-
-                    <div class="products__block block">
-                      <a href="#" class="products__name"
-                        >Round Jute Placemat
-                      </a>
-                      <div class="products__rating">
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                      </div>
-                      <div class="products__price">30$</div>
-                    </div>
-                  </div>
-
-                  <div class="products__item">
-                    <div class="products__img">
-                      <img src="images/metal-basket.jpg" alt="Metal Basket" />
-                      <div class="products__hover-bar"></div>
-                      <div class="products__tool-bar">
-                        <a href="#" class="products__bag"></a>
-                        <img src="images/line.svg" alt="#" />
-                        <a href="#" class="products__like"></a>
-                      </div>
-                    </div>
-
-                    <div class="products__block block">
-                      <a href="#" class="products__name">Metal Wire Basket</a>
-                      <div class="products__rating">
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                        <a href="#" class="products__star"> </a>
-                      </div>
-                      <div class="products__price">30$</div>
-                    </div>
-                  </div>
-
-                  <div class="products__item products__item_hover">
-                    <img
-                      class="products__hover"
-                      src="images/hover.png"
-                      alt="#"
-                    />
-                    <div class="products__img products__img_hover">
-                      <img src="images/basket.jpg" alt="Basket" />
-                    </div>
-                    <div class="products__block_hover block">
-                      <h2 class="products__title">decor</h2>
-                      <div class="products__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                      </div>
-                      <button class="products__btn btn">view all</button>
-                    </div>
-                  </div>
-                  <div class="products__nav">
-                    <label for="s1"></label>
-                    <label for="s2"></label>
-                    <label for="s3"></label>
-                    <label for="s4"></label>
-                    <label for="s5"></label>
-                    <label for="s6"></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+            </section>
         </div>
         <!-- Promo section ('bedsheet sets' title) -->
         <section class="promo">
-          <img src="./images/promo-banner.jpg" alt="promo" />
-          <div class="promo__text-box">
-            <div class="promo__text-wrapper">
-              <h3 class="promo__title">bedsheet sets</h3>
-              <div class="promo__price">
-                $50.00<span class="promo__price-old">$220.00</span>
-              </div>
-              <p class="promo__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-              <button class="promo__button secondary-button">
-                view details
-              </button>
+            <img src="./images/promo-banner.jpg" alt="promo"/>
+            <div class="promo__text-box">
+                <div class="promo__text-wrapper">
+                    <h3 class="promo__title">bedsheet sets</h3>
+                    <div class="promo__price">
+                        $50.00<span class="promo__price-old">$220.00</span>
+                    </div>
+                    <p class="promo__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor.
+                    </p>
+                    <button class="promo__button secondary-button">
+                        view details
+                    </button>
+                </div>
             </div>
-          </div>
         </section>
 
         <!-- Top Rating section -->
         <section class="top-rating">
-          <h2 class="top-rating__title">top rating</h2>
-          <!-- top-rating item 1 -->
-          <div class="top-rating__item item1">
-            <div class="top-rating__image">
-              <img
-                src="./images/tray-with-foot.jpg"
-                class="top-rating_img"
-                alt="Tray with Foot"
-              />
-              <div class="like-hover">
-                <a href="#" class="basket-icon"
-                  ><img src="./images/basket-icon.svg" alt=""
-                /></a>
-                <a href="#" class="like-icon"
-                  ><img src="./images/like-icon.svg" alt=""
-                /></a>
-              </div>
+            <h2 class="top-rating__title">top rating</h2>
+            <!-- top-rating item 1 -->
+            <div class="top-rating__item item1">
+                <div class="top-rating__image">
+                    <img
+                            src="./images/tray-with-foot.jpg"
+                            class="top-rating_img"
+                            alt="Tray with Foot"
+                    />
+                    <div class="like-hover">
+                        <a href="#" class="basket-icon"
+                        ><img src="./images/basket-icon.svg" alt=""
+                        /></a>
+                        <a href="#" class="like-icon"
+                        ><img src="./images/like-icon.svg" alt=""
+                        /></a>
+                    </div>
+                </div>
+                <div class="top-rating__item-details">
+                    <p class="top-rating__item-name">Tray with Foot</p>
+                    <div class="top-rating__item-rating">
+                <span
+                ><img src="./images/golden-star.svg" alt="rating star"
+                /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span><img src="./images/star.svg" alt="rating star"/></span>
+                    </div>
+                    <p class="top-rating__item-price">30$</p>
+                </div>
             </div>
-            <div class="top-rating__item-details">
-              <p class="top-rating__item-name">Tray with Foot</p>
-              <div class="top-rating__item-rating">
+            <!-- top-rating item 2 -->
+            <div class="top-rating__item item2">
+                <div class="top-rating__image">
+                    <img src="./images/seat-cushion.jpg" alt="Twill Seat Cushion"/>
+                </div>
+                <div class="top-rating__item-details">
+                    <p class="top-rating__item-name">Twill Seat Cushion</p>
+                    <div class="top-rating__item-rating">
                 <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
+                ><img src="./images/golden-star.svg" alt="rating star"
                 /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span><img src="./images/star.svg" alt="rating star" /></span>
-              </div>
-              <p class="top-rating__item-price">30$</p>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span><img src="./images/star.svg" alt="rating star"/></span>
+                    </div>
+                    <p class="top-rating__item-price">30$</p>
+                </div>
             </div>
-          </div>
-          <!-- top-rating item 2 -->
-          <div class="top-rating__item item2">
-            <div class="top-rating__image">
-              <img src="./images/seat-cushion.jpg" alt="Twill Seat Cushion" />
+            <!-- top-rating item 3 -->
+            <div class="top-rating__item item3">
+                <div class="top-rating__image">
+                    <img
+                            src="./images/fluted-glass.jpg"
+                            alt="Fluted Beverage Glass"
+                    />
+                </div>
+                <div class="top-rating__item-details">
+                    <p class="top-rating__item-name">Fluted Beverage Glass</p>
+                    <div class="top-rating__item-rating">
+                <span
+                ><img src="./images/golden-star.svg" alt="rating star"
+                /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span><img src="./images/star.svg" alt="rating star"/></span>
+                    </div>
+                    <p class="top-rating__item-price">30$</p>
+                </div>
             </div>
-            <div class="top-rating__item-details">
-              <p class="top-rating__item-name">Twill Seat Cushion</p>
-              <div class="top-rating__item-rating">
+            <!-- top-rating item 4 -->
+            <div class="top-rating__item item4">
+                <div class="top-rating__image">
+                    <img src="./images/egg-cup.jpg" alt="Ceramic Egg Cup"/>
+                </div>
+                <div class="top-rating__item-details">
+                    <p class="top-rating__item-name">Ceramic Egg Cup</p>
+                    <div class="top-rating__item-rating">
                 <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
+                ><img src="./images/golden-star.svg" alt="rating star"
                 /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span><img src="./images/star.svg" alt="rating star" /></span>
-              </div>
-              <p class="top-rating__item-price">30$</p>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span><img src="./images/star.svg" alt="rating star"/></span>
+                    </div>
+                    <p class="top-rating__item-price">30$</p>
+                </div>
             </div>
-          </div>
-          <!-- top-rating item 3 -->
-          <div class="top-rating__item item3">
-            <div class="top-rating__image">
-              <img
-                src="./images/fluted-glass.jpg"
-                alt="Fluted Beverage Glass"
-              />
+            <!-- top-rating item 5 -->
+            <div class="top-rating__item item5">
+                <div class="top-rating__image">
+                    <img src="./images/small-bamboo-box.jpg" alt="Small Bamboo Box"/>
+                </div>
+                <div class="top-rating__item-details">
+                    <p class="top-rating__item-name">Small Bamboo Box</p>
+                    <div class="top-rating__item-rating">
+                <span
+                ><img src="./images/golden-star.svg" alt="rating star"
+                /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span><img src="./images/star.svg" alt="rating star"/></span>
+                    </div>
+                    <p class="top-rating__item-price">30$</p>
+                </div>
             </div>
-            <div class="top-rating__item-details">
-              <p class="top-rating__item-name">Fluted Beverage Glass</p>
-              <div class="top-rating__item-rating">
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span><img src="./images/star.svg" alt="rating star" /></span>
-              </div>
-              <p class="top-rating__item-price">30$</p>
-            </div>
-          </div>
-          <!-- top-rating item 4 -->
-          <div class="top-rating__item item4">
-            <div class="top-rating__image">
-              <img src="./images/egg-cup.jpg" alt="Ceramic Egg Cup" />
-            </div>
-            <div class="top-rating__item-details">
-              <p class="top-rating__item-name">Ceramic Egg Cup</p>
-              <div class="top-rating__item-rating">
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span><img src="./images/star.svg" alt="rating star" /></span>
-              </div>
-              <p class="top-rating__item-price">30$</p>
-            </div>
-          </div>
-          <!-- top-rating item 5 -->
-          <div class="top-rating__item item5">
-            <div class="top-rating__image">
-              <img src="./images/small-bamboo-box.jpg" alt="Small Bamboo Box" />
-            </div>
-            <div class="top-rating__item-details">
-              <p class="top-rating__item-name">Small Bamboo Box</p>
-              <div class="top-rating__item-rating">
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span><img src="./images/star.svg" alt="rating star" /></span>
-              </div>
-              <p class="top-rating__item-price">30$</p>
-            </div>
-          </div>
-          <!-- top-rating item 6 -->
-          <div class="top-rating__item item6">
-            <div class="top-rating__image">
-              <img
-                src="./images/metal-cutlery-basket.jpg"
-                alt="Metal Cutlery
+            <!-- top-rating item 6 -->
+            <div class="top-rating__item item6">
+                <div class="top-rating__image">
+                    <img
+                            src="./images/metal-cutlery-basket.jpg"
+                            alt="Metal Cutlery
         Basket"
-              />
+                    />
+                </div>
+                <div class="top-rating__item-details">
+                    <p class="top-rating__item-name">Metal Cutlery Basket</p>
+                    <div class="top-rating__item-rating">
+                <span
+                ><img src="./images/golden-star.svg" alt="rating star"
+                /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span><img src="./images/star.svg" alt="rating star"/></span>
+                    </div>
+                    <p class="top-rating__item-price">30$</p>
+                </div>
             </div>
-            <div class="top-rating__item-details">
-              <p class="top-rating__item-name">Metal Cutlery Basket</p>
-              <div class="top-rating__item-rating">
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span><img src="./images/star.svg" alt="rating star" /></span>
-              </div>
-              <p class="top-rating__item-price">30$</p>
-            </div>
-          </div>
-          <!-- top-rating item 7 -->
-          <div class="top-rating__item item7">
-            <div class="top-rating__image">
-              <img
-                src="./images/4-pack-cups.jpg"
-                alt="4-pack Ceramic
+            <!-- top-rating item 7 -->
+            <div class="top-rating__item item7">
+                <div class="top-rating__image">
+                    <img
+                            src="./images/4-pack-cups.jpg"
+                            alt="4-pack Ceramic
         Cups"
-              />
+                    />
+                </div>
+                <div class="top-rating__item-details">
+                    <p class="top-rating__item-name">4-pack Ceramic Cups</p>
+                    <div class="top-rating__item-rating">
+                <span
+                ><img src="./images/golden-star.svg" alt="rating star"
+                /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span><img src="./images/star.svg" alt="rating star"/></span>
+                    </div>
+                    <p class="top-rating__item-price">30$</p>
+                </div>
             </div>
-            <div class="top-rating__item-details">
-              <p class="top-rating__item-name">4-pack Ceramic Cups</p>
-              <div class="top-rating__item-rating">
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span><img src="./images/star.svg" alt="rating star" /></span>
-              </div>
-              <p class="top-rating__item-price">30$</p>
-            </div>
-          </div>
-          <!-- top-rating item 8 -->
-          <div class="top-rating__item item8">
-            <div class="top-rating__image">
-              <img
-                src="./images/2-pack-linen-napkins.jpg"
-                alt="2-pack Linen
+            <!-- top-rating item 8 -->
+            <div class="top-rating__item item8">
+                <div class="top-rating__image">
+                    <img
+                            src="./images/2-pack-linen-napkins.jpg"
+                            alt="2-pack Linen
         Napkins"
-              />
+                    />
+                </div>
+                <div class="top-rating__item-details">
+                    <p class="top-rating__item-name">2-pack Linen Napkins</p>
+                    <div class="top-rating__item-rating">
+                <span
+                ><img src="./images/golden-star.svg" alt="rating star"
+                /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span><img src="./images/star.svg" alt="rating star"/></span>
+                    </div>
+                    <p class="top-rating__item-price">30$</p>
+                </div>
             </div>
-            <div class="top-rating__item-details">
-              <p class="top-rating__item-name">2-pack Linen Napkins</p>
-              <div class="top-rating__item-rating">
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span><img src="./images/star.svg" alt="rating star" /></span>
-              </div>
-              <p class="top-rating__item-price">30$</p>
-            </div>
-          </div>
-          <!-- top-rating item 9 -->
-          <div class="top-rating__item item9">
-            <div class="top-rating__image">
-              <img
-                src="./images/glazed-stoneware-plate.jpg"
-                alt="Glazed Stoneware
+            <!-- top-rating item 9 -->
+            <div class="top-rating__item item9">
+                <div class="top-rating__image">
+                    <img
+                            src="./images/glazed-stoneware-plate.jpg"
+                            alt="Glazed Stoneware
         Plate"
-              />
+                    />
+                </div>
+                <div class="top-rating__item-details">
+                    <p class="top-rating__item-name">Glazed Stoneware Plate</p>
+                    <div class="top-rating__item-rating">
+                <span
+                ><img src="./images/golden-star.svg" alt="rating star"
+                /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span
+                        ><img src="./images/golden-star.svg" alt="rating star"
+                        /></span>
+                        <span><img src="./images/star.svg" alt="rating star"/></span>
+                    </div>
+                    <p class="top-rating__item-price">30$</p>
+                </div>
             </div>
-            <div class="top-rating__item-details">
-              <p class="top-rating__item-name">Glazed Stoneware Plate</p>
-              <div class="top-rating__item-rating">
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span
-                  ><img src="./images/golden-star.svg" alt="rating star"
-                /></span>
-                <span><img src="./images/star.svg" alt="rating star" /></span>
-              </div>
-              <p class="top-rating__item-price">30$</p>
-            </div>
-          </div>
-          <button class="primary-button">load more products</button>
+            <button class="primary-button">load more products</button>
         </section>
         <!-- Subscribe -->
         <section class="subscribe">
-          <div class="subscribe__text-block">
-            <h2 class="subscribe__title">SING UP FOR THE NEWSLETTER</h2>
-            <p class="subscribe__text">
-              Subscribe for the latest stories and promotions
-            </p>
-          </div>
-          <form class="subscribe__form">
-            <input
-              class="subscribe__input"
-              type="email"
-              placeholder="Enter your e-mail address"
-            />
-            <button class="subscribe__button" type="submit">
-              <img
-                class="subscribe__icon"
-                src="images/subscribe_icon.svg"
-                alt="email_icon"
-              />
-            </button>
-          </form>
+            <div class="subscribe__text-block">
+                <h2 class="subscribe__title">SING UP FOR THE NEWSLETTER</h2>
+                <p class="subscribe__text">
+                    Subscribe for the latest stories and promotions
+                </p>
+            </div>
+            <form class="subscribe__form">
+                <input
+                        class="subscribe__input"
+                        type="email"
+                        placeholder="Enter your e-mail address"
+                />
+                <button class="subscribe__button" type="submit">
+                    <img
+                            class="subscribe__icon"
+                            src="images/subscribe_icon.svg"
+                            alt="email_icon"
+                    />
+                </button>
+            </form>
         </section>
-      </main>
+    </main>
+</div>
+<br>
+<div class="container" style="background-color: #323334;max-width: 100%; height: 450px; font-family: Roboto,serif; ">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-4" style="color: white; line-height: 32.81px">
+            <h3>URBAN OUTFITTERS</h3>
+            <br>
+            <div style="line-height: 22px;color: rgba(255, 255, 255, 0.5);">
+                Lorem ipsum dolor sit amet, consectetur
+                <br>
+                adipiscing elit, sed do eiusmod tempor.
+            </div>
+            <br>
+            <br>
+            <div style="line-height: 30px">
+                121 king street, Melbourne 3000
+                <br>
+                +61 3 8376 6284
+                <br>
+                contact@urbanoutfitters.com
+            </div>
+
+
+
+
+        </div>
+        <div class="col-sm-2" style="color: white; line-height: 32px;color: rgba(255, 255, 255, 0.5);">
+            <p style="color: white">SHOPPING</p>
+            Your cart
+            <br>
+            Your orders
+            <br>
+            Compared items
+            <br>
+            Wishlist items
+            <br>
+            Shipping detail
+        </div>
+        <div class="col-sm-2" style="color: white;  line-height: 32px; color: rgba(255, 255, 255, 0.5);">
+            <p style="color: white">MORE LINK</p>
+            Blog
+            <br>
+            Gift Center
+            <br>
+            Buying Guides
+            <br>
+            New Arrivals
+            <br>
+            Clearance
+        </div>
+        <div class="col-sm-4" style="color: white; line-height: 32px;color: rgba(255, 255, 255, 0.5);">
+            <p style="color: white">FROM THE BLOG</p>
+            <font size="+2">26 </font><font size="-1">May</font>
+            <br>
+            <div style="line-height: 50%">
+                Lorem ipsum dolor sit amet, consectetur
+                <br>
+                <br>
+                adipiscing elit.
+                <br>
+                <br>
+                <br>
+                3 comments
+                <br>
+                <br>
+            </div>
+            <hr style="width: 296px; height: 0px; float: left; border: 1px solid rgba(255, 255, 255, 0.5);">
+            <br>
+            <br>
+            <font size="+2">27 </font><font size="-1">May</font>
+            <br>
+            <div style="line-height: 50%">
+                Lorem ipsum dolor sit amet, consectetur
+                <br>
+                <br>
+                adipiscing elit.
+                <br>
+                <br>
+                <br>
+                3 comments
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
     </div>
-  </body>
+
+</div>
+<footer style="background-color: black; height: 70px; color: white; bottom: 0">
+    <br>
+    <p align="center">Urban Outfitters © – All rights reserved </p>
+</footer>
+
+</body>
 </html>
