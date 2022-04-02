@@ -4,6 +4,7 @@
     left: 0
     width: 100%
     height: 100%
+    object-fit: cover
 
 =font($fz, $lh)
     font-size: $fz
@@ -17,7 +18,6 @@ body
 .wrapper
     display: grid
     grid-template-areas: "header" "main" "footer"
-    grid-template-columns: 1fr
 
 .header
     grid-area: header
@@ -131,7 +131,7 @@ body
 .main
     grid-area: main
     display: grid
-    grid-template-areas: "screen1" "screen2" "screen3" "screen4" "subscribe"
+    grid-template-areas: "screen1" "screen2" "promo" "top-rating" "subscribe"
     max-width: 100%
     grid-template-columns: 1fr
 
@@ -206,11 +206,11 @@ body
         margin-left: 26px
 
 .goods
-    margin: 0px 4% 3% 4%
+    margin: 0px 4% 4% 4%
 
     &__cards
         display: grid
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(auto-fit, minmax(636px, 1fr))
         gap: 23px
 
     &__card
@@ -247,7 +247,7 @@ body
 
     &__items
         display: grid
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(auto-fit, minmax(306px, 1fr))
         column-gap: 24px
         grid-row-gap: 55px
 
@@ -471,7 +471,6 @@ input[name*=s]
         display: grid
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
         row-gap: 1.5rem
-        column-gap: auto-fit
 
     &__title
         margin-top: 81px

@@ -13,6 +13,14 @@
             display: none
 
 @media only screen and (max-device-width: 968px)
+    .hotdeals__img > img, .goods__img > img, .products__hover, .products__img > img
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: scale-down
+
     .footer-top
         &__container
             grid-template-columns: repeat(2, auto)
@@ -24,6 +32,11 @@
             display: none
 
 @media only screen and (max-device-width: 768px)
+    .products__block_hover
+        top: 30%
+        left: 30%
+        right: 25%
+
     .footer-top
         padding: 40px 32px 48px
 
@@ -87,6 +100,9 @@
         font-size: $fz
         line-height: $lh
 
+    .btn
+        max-width: 124px
+
     .hotdeals
         margin-bottom: 60px
 
@@ -102,17 +118,11 @@
         &__btn
             margin: 0px
 
-    .hotdeals__img > img
-        @extend %ruleimg
-
     .screen2__title
         +font(1.5rem, 1.17)
 
         display: block
         margin-bottom: 25px
-
-    .goods
-        display: table-footer-group
 
     .products
         display: table-header-group
@@ -154,8 +164,8 @@
             bottom: 0px
             left: 0px
             right: 0px
-            height: 27%
-            justify-content: end
+            height: 25%
+            justify-content: space-around
             color: white
             background-color: #B7B79A
             opacity: 0.6
@@ -163,7 +173,7 @@
 
         &__nav
             position: absolute
-            bottom: -20%
+            bottom: -50px
             width: 100%
             z-index: 2
             display: flex
@@ -211,28 +221,32 @@
         margin-left: 0
 
     #s2:checked ~ .s1
-        margin-left: -20%
+        margin-left: -15%
 
     #s3:checked ~ .s1
-        margin-left: -40%
+        margin-left: -30%
 
     #s4:checked ~ .s1
-        margin-left: -60%
+        margin-left: -45%
 
     #s5:checked ~ .s1
-        margin-left: -80%
+        margin-left: -60%
 
     #s6:checked ~ .s1
-        margin-left: -100%
+        margin-left: -80%
 
-    .goods__card_dark
-        display: none
+    .goods
+        display: table-footer-group
+        margin: 0px 0px 90px 0px
 
-    .goods__cards
-        grid-template-columns: 1fr
+        &__card_dark
+            display: none
 
-    .goods__block
-        margin: 20% 7% 15% 7%
+        &__cards
+            grid-template-columns: 1fr
+
+        &__block
+            margin: 20% 7% 15% 7%
 
     .promo
         grid-area: promo
