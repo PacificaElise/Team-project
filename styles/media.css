@@ -1,3 +1,114 @@
+@media only screen and (max-device-width: 1280px) {
+  .footer-top__container {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+  }
+  .footer-top__shopping {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .footer-top__more-link {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .footer-top__blog {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 968px) {
+  .footer-top__container {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+  .footer-top__shopping {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .footer-top__more-link {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .footer-top {
+    padding: 40px 32px 48px;
+  }
+  .footer-top__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    grid-row-gap: 0;
+  }
+  .footer-top__shopping {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .footer-top__socnet {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .footer-top__item {
+    margin: 22px 0;
+  }
+  .footer-top__item:first-child {
+    margin-top: 0;
+  }
+  .footer-top__item:last-child {
+    margin-bottom: 0;
+  }
+  .footer-top__socnet {
+    margin-top: 50px;
+  }
+  .footer-top__link {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .footer-info__logo {
+    text-align: center;
+  }
+  .footer-info__phone {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .footer-info__address,
+  .footer-top__list {
+    margin-top: 64px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer-bottom {
+    padding: 11px 0;
+  }
+}
+
 @media only screen and (max-device-width: 375px) {
   .products__img > img {
     position: relative;

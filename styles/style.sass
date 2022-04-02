@@ -601,3 +601,147 @@ input[name*=s]
         justify-content: center
         border: none
         background-color: #323334
+
+.footer 
+    background-color: #323334
+.footer-top 
+    padding: 50px 72px 72px
+    background-color: #323334
+    &__container 
+        display: grid
+        grid-template-columns: repeat(4, auto)
+        grid-template-rows: 1fr auto
+        grid-column-gap: 128px
+        grid-row-gap: 56px
+        max-width: 1200px
+        width: 100%
+        margin-right: auto
+    &__info 
+        grid-area: 1 / 1 / 2 / 2
+    &__shopping 
+        grid-area: 1 / 2 / 2 / 3
+    &__more-link 
+        grid-area: 1 / 3 / 2 / 4
+    &__blog 
+        grid-area: 1 / 4 / 3 / 5
+    &__socnet
+        grid-area: 2 / 1 / 3 / 2
+    &__title
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+    &__list
+        display: flex
+        flex-direction: column
+        margin-top: 34px
+        margin-bottom: 0
+        padding: 0
+    &__item
+        display: inline-block
+        margin: 8px 0
+    &__link
+        font-weight: 300
+        font-size: 14px
+        line-height: 16px
+        color: #FFFFFF
+
+    &__article
+        display: block
+        max-width: 260px
+        width: 100%
+        margin-top: 25px
+        padding-bottom: 32px
+        position: relative
+    &__article:after
+        position: absolute
+        content: ''
+        bottom: 0
+        left: 0
+        max-width: 296px
+        width: 100%
+        height: 1px
+        background-color: rgba(255, 255, 255, 0.5)
+    &__article:last-child
+        margin-top: 34px
+    &__article:last-child:after
+        content: none
+    &__socnet
+        max-width: 286px
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+.footer-article 
+    &__date
+        color: rgba(255, 255, 255, 0.5)
+    &__date-number,
+    &__date-month
+        font-weight: 400
+    &__date-number
+        font-size: 24px
+        line-height: 28px
+    &__date-month
+        margin-left: 6px
+        font-size: 14px
+        line-height: 16px
+    &__text
+        margin-top: 10px
+        font-weight: 300
+        font-size: 16px
+        line-height: 22px
+        color: #FFFFFF
+    &__comment
+        margin-top: 10px
+        font-weight: 400
+        font-size: 14px
+        line-height: 16px
+        color: #FFFFFF
+        opacity: 0.5
+
+.footer-bottom 
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 18px 0
+    background-color: #222222
+    &__copyright
+        color: #FFFFFF
+        font-weight: 300
+        font-size: 14px
+        line-height: 16px
+
+.footer-info 
+    &__logo
+        display: inline-block
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 28px
+        line-height: 33px
+        color: #FFFFFF
+    &__text
+        max-width: 312px
+        margin-top: 40px
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        color: rgba(255, 255, 255, 0.5)
+    &__address
+        margin-top: 40px
+        display: flex
+        flex-direction: column
+    &__street,
+    &__phone,
+    &__email
+        font-weight: 700
+        font-size: 16px
+        line-height: 22px
+        color: #FFFFFF
+        text-decoration: none
+        color: #FFFFFF
+        margin: 4px 0
+    &__street
+        margin-top: 0
+    &__email
+        margin-bottom: 0
