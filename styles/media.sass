@@ -1,25 +1,21 @@
 @media only screen and (max-device-width: 375px)
     %ruleimg
         position: relative
-        top: 0
+        bottom: 0
         left: 0
         width: 100%
         height: 100%
-        object-fit: contain
+        object-fit: scale-down
 
     =font($fz, $lh)
         font-size: $fz
         line-height: $lh
 
     .hotdeals
-        overflow: hidden
         margin-bottom: 60px
 
-        &__img
-            margin: 70px 26px
-
         &__block
-            margin: 53px 54px 53px 0px
+            margin: 30% 10% 20% 10%
 
         &__title
             +font(0.875rem, 1.17)
@@ -27,7 +23,15 @@
         &__link
             +font(1.25rem, 1.17)
 
+        &__btn
+            margin: 0px
+
+    .hotdeals__img > img
+        @extend %ruleimg
+
     .screen2__title
+        +font(1.5rem, 1.17)
+
         display: block
         margin-bottom: 25px
 
@@ -42,6 +46,9 @@
         &__rating
             display: none
 
+        &__img
+            height: 100%
+
         &__wrapper
             margin: 0px 0px 96px 26px
             position: relative
@@ -49,15 +56,14 @@
             height: 100%
             display: flex
             justify-content: center
-            overflow: hidden
 
         &__slider
             position: relative
-            max-width: 375px
             height: auto
+            overflow: hidden
 
         &__items
-            width: 600%
+            width: 300%
             height: 100%
             display: flex
 
@@ -72,7 +78,7 @@
             bottom: 0px
             left: 0px
             right: 0px
-            height: 30%
+            height: 27%
             justify-content: end
             color: white
             background-color: #B7B79A
@@ -81,17 +87,17 @@
 
         &__nav
             position: absolute
-            bottom: 26px
+            bottom: -20%
             width: 100%
             z-index: 2
             display: flex
             justify-content: center
 
         &__nav > label
-            height: 8px
-            width: 8px
+            height: 9px
+            width: 9px
             border-radius: 8px
-            margin: 6px
+            margin: 4px
             cursor: pointer
             background-color: #C4C4C4
             opacity: 0.5
@@ -111,11 +117,13 @@
         &__hover-bar
             display: none
 
-        &__tool-bar
-            display: none
+        &__price
+            +font(1.25rem, 1.17)
 
     .products__img > img
         @extend %ruleimg
+
+        object-fit: fill
 
     .products__block > a
         +font(1rem, 1.17)
@@ -143,3 +151,9 @@
 
     .goods__card_dark
         display: none
+
+    .goods__cards
+        grid-template-columns: 1fr
+
+    .goods__block
+        margin: 20% 7% 15% 7%
