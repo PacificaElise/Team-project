@@ -1,198 +1,67 @@
-@media only screen and (max-device-width: 1280px) {
-  .footer-top__container {
-    grid-template-columns: repeat(3, auto); }
-  .footer-top__shopping {
-    grid-area: 1/2/2/3; }
-  .footer-top__more-link {
-    grid-area: 1/3/2/4; }
-  .footer-top__blog {
-    display: none; } }
-@media only screen and (max-device-width: 968px) {
-  .footer-top__container {
-    grid-template-columns: repeat(2, auto); }
-  .footer-top__shopping {
-    grid-area: 1/2/2/3; }
-  .footer-top__more-link {
-    display: none; } }
-@media only screen and (max-device-width: 768px) {
-  .footer-top {
-    padding: 40px 32px 48px; }
-    .footer-top__container {
-      justify-content: center;
-      grid-template-columns: auto;
-      grid-template-rows: repeat(3, auto);
-      grid-row-gap: 0; }
-    .footer-top__shopping {
-      grid-area: 2/1/3/2; }
-    .footer-top__socnet {
-      grid-area: 3/1/4/2; }
-    .footer-top__item {
-      margin: 22px 0; }
-    .footer-top__item:first-child {
-      margin-top: 0; }
-    .footer-top__item:last-child {
-      margin-bottom: 0; }
-    .footer-top__socnet {
-      margin-top: 50px; }
-    .footer-top__link {
-      text-transform: uppercase;
-      font-weight: 700; }
+/*
+Error: Base-level rules cannot contain the parent-selector-referencing character '&'.
+        on line 273 of C:\Users\stesh\frontend\FW21-project2\styles\media.sass
 
-  .footer-info__logo {
-    text-align: center; }
-  .footer-info__phone {
-    order: -1; }
+268: 
+269:     .promo
+270:         grid-area: promo
+271:         position: relative
+272: 
+273:     &__img > img
+274:         max-width: 70%
+275: 
+276:     &__text-box
+277:         position: absolute
+278:         width: 192px
 
-  .footer-info__address,
-  .footer-top__list {
-    margin-top: 64px;
-    align-items: center; }
-
-  .hide-mobile {
-    display: none; } }
-@media only screen and (max-device-width: 375px) {
-  .footer-bottom {
-    padding: 11px 0; } }
-@media only screen and (max-device-width: 375px) {
-  .products__img > img {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; }
-
-  .top-bar__search {
-    display: none; }
-
-  .middle-bar,
-  .lower-bar {
-    display: none; }
-
-  .subscribe {
-    height: 157px;
-    margin: 0px 0px 77px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .subscribe__text-block {
-      width: 50%; }
-    .subscribe__form {
-      width: 50%; }
-
-  .hotdeals {
-    overflow: hidden;
-    margin-bottom: 60px; }
-    .hotdeals__img {
-      margin: 70px 26px; }
-    .hotdeals__block {
-      margin: 53px 54px 53px 0px; }
-    .hotdeals__title {
-      font-size: 0.875rem;
-      line-height: 1.17; }
-    .hotdeals__link {
-      font-size: 1.25rem;
-      line-height: 1.17; }
-
-  .screen2__title {
-    display: block;
-    margin-bottom: 25px; }
-
-  .goods {
-    display: table-footer-group; }
-
-  .products {
-    display: table-header-group;
-    position: relative;
-    margin: 0px; }
-    .products__rating {
-      display: none; }
-    .products__wrapper {
-      margin: 0px 0px 96px 26px;
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      overflow: hidden; }
-    .products__slider {
-      position: relative;
-      max-width: 375px;
-      height: auto; }
-    .products__items {
-      width: 600%;
-      height: 100%;
-      display: flex; }
-    .products__item {
-      width: 100%;
-      position: relative;
-      min-height: 260px;
-      display: block; }
-    .products__block {
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      height: 30%;
-      justify-content: end;
-      color: white;
-      background-color: #B7B79A;
-      opacity: 0.6;
-      padding: 14px; }
-    .products__nav {
-      position: absolute;
-      bottom: 26px;
-      width: 100%;
-      z-index: 2;
-      display: flex;
-      justify-content: center; }
-    .products__nav > label {
-      height: 8px;
-      width: 8px;
-      border-radius: 8px;
-      margin: 6px;
-      cursor: pointer;
-      background-color: #C4C4C4;
-      opacity: 0.5;
-      transition: all 0.4s ease; }
-    .products__nav > label:hover {
-      opacity: 0.8;
-      transform: scale(1.1);
-      background-color: #222222; }
-    .products__item_hover {
-      display: none; }
-    .products__block {
-      margin: 0px; }
-    .products__hover-bar {
-      display: none; }
-    .products__tool-bar {
-      display: none; }
-
-  .products__block > a {
-    font-size: 1rem;
-    line-height: 1.17;
-    color: #ffff;
-    margin-bottom: 9px; }
-
-  #s1:checked ~ .s1 {
-    margin-left: 0; }
-
-  #s2:checked ~ .s1 {
-    margin-left: -20%; }
-
-  #s3:checked ~ .s1 {
-    margin-left: -40%; }
-
-  #s4:checked ~ .s1 {
-    margin-left: -60%; }
-
-  #s5:checked ~ .s1 {
-    margin-left: -80%; }
-
-  #s6:checked ~ .s1 {
-    margin-left: -100%; }
-
-  .goods__card_dark {
-    display: none; } }
-
-/*# sourceMappingURL=media.css.map */
+Backtrace:
+C:\Users\stesh\frontend\FW21-project2\styles\media.sass:273
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/selector/comma_sequence.rb:31:in `resolve_parent_refs'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:439:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:528:in `visit_media'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Base-level rules cannot contain the parent-selector-referencing character '&'.\A         on line 273 of C:\Users\stesh\frontend\FW21-project2\styles\media.sass\A \A 268: \A 269:     .promo\A 270:         grid-area: promo\A 271:         position: relative\A 272: \A 273:     &__img > img\A 274:         max-width: 70%\A 275: \A 276:     &__text-box\A 277:         position: absolute\A 278:         width: 192px"; }
