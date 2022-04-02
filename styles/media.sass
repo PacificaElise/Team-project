@@ -1,0 +1,202 @@
+@media only screen and (max-device-width: 375px)
+    %ruleimg
+        position: relative
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: contain
+
+    =font($fz, $lh)
+        font-size: $fz
+        line-height: $lh
+
+    .hotdeals
+        overflow: hidden
+        margin-bottom: 60px
+
+        &__img
+            margin: 70px 26px
+
+        &__block
+            margin: 53px 54px 53px 0px
+
+        &__title
+            +font(0.875rem, 1.17)
+
+        &__link
+            +font(1.25rem, 1.17)
+
+    .screen2__title
+        display: block
+        margin-bottom: 25px
+
+    .goods
+        display: table-footer-group
+
+    .products
+        display: table-header-group
+        position: relative
+        margin: 0px
+
+        &__rating
+            display: none
+
+        &__wrapper
+            margin: 0px 0px 96px 26px
+            position: relative
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            overflow: hidden
+
+        &__slider
+            position: relative
+            max-width: 375px
+            height: auto
+
+        &__items
+            width: 600%
+            height: 100%
+            display: flex
+
+        &__item
+            width: 100%
+            position: relative
+            min-height: 260px
+            display: block
+
+        &__block
+            position: absolute
+            bottom: 0px
+            left: 0px
+            right: 0px
+            height: 30%
+            justify-content: end
+            color: white
+            background-color: #B7B79A
+            opacity: 0.6
+            padding: 14px
+
+        &__nav
+            position: absolute
+            bottom: 26px
+            width: 100%
+            z-index: 2
+            display: flex
+            justify-content: center
+
+        &__nav > label
+            height: 8px
+            width: 8px
+            border-radius: 8px
+            margin: 6px
+            cursor: pointer
+            background-color: #C4C4C4
+            opacity: 0.5
+            transition: all 0.4s ease
+
+        &__nav > label:hover
+            opacity: 0.8
+            transform: scale(1.1)
+            background-color: #222222
+
+        &__item_hover
+            display: none
+
+        &__block
+            margin: 0px
+
+        &__hover-bar
+            display: none
+
+        &__tool-bar
+            display: none
+
+    .products__img > img
+        @extend %ruleimg
+
+    .products__block > a
+        +font(1rem, 1.17)
+
+        color: #ffff
+        margin-bottom: 9px
+
+    #s1:checked ~ .s1
+        margin-left: 0
+
+    #s2:checked ~ .s1
+        margin-left: -20%
+
+    #s3:checked ~ .s1
+        margin-left: -40%
+
+    #s4:checked ~ .s1
+        margin-left: -60%
+
+    #s5:checked ~ .s1
+        margin-left: -80%
+
+    #s6:checked ~ .s1
+        margin-left: -100%
+
+    .goods__card_dark
+        display: none
+
+// screen3
+    .promo
+        grid-area: promo
+        position: relative
+
+    &__img> img
+        max-width: 70%
+
+    &__text-box
+        position: absolute
+        width: 192px
+        height: 139px
+        left: 38px
+        top: 36px
+        background: rgba(255, 255, 255, 0.9)
+
+    &__text-wrapper
+        width: 152px
+        height: 95px
+        margin: 22px 20px
+
+    &__title
+        padding: 0
+        margin: 0
+        font-size: 1.25rem
+        line-height: 1.44rem
+        font-weight: 700
+        text-transform: uppercase
+
+    &__description
+        visibility: hidden
+        display: none
+
+    &__button
+        height: 48px
+        width: 124px
+
+        font-weight: 700
+        font-size: 0.875rem
+        text-transform: uppercase
+
+    &__link
+        text-decoration: none
+        color: #323334
+
+    &__button:hover
+        display: none
+
+    &__link:hover
+        color: #fff
+
+    &__price
+        display: none
+
+    &__price-old
+        display: none
