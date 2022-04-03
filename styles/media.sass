@@ -1,4 +1,10 @@
+@media only screen and (min-device-width: 1280px)
+    #drop-down_btn
+        display: none
 @media only screen and (max-device-width: 1280px)
+    #drop-down_btn
+        display: none
+
     .footer-top
         &__container
             grid-template-columns: repeat(3, auto)
@@ -16,6 +22,9 @@
     .top-bar__icons
         width: 40%
     
+    #drop-down_btn
+        display: none
+
     .hotdeals__img > img, .goods__img > img, .products__hover, .products__img > img
         position: absolute
         bottom: 0
@@ -39,6 +48,9 @@
         margin: 0 10px 0 10px
     .top-bar__icons
         width: 40%
+
+    #drop-down_btn
+        display: none
 
     .products__block_hover
         top: 30%
@@ -134,6 +146,13 @@
     .middle-bar,
     .lower-bar
         display: none
+ 
+    #wishlist_place
+        display: none
+
+    #drop-down_btn
+        display: flex
+        align-self: center
  
     .btn
         max-width: 124px
