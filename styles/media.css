@@ -388,14 +388,16 @@
     grid-area: promo;
     margin-bottom: 47px;
     height: 204px;
+    width: 100%;
   }
   .promo__img {
     position: relative;
     width: 100%;
   }
-  .promo__img > img {
+  .promo__img img {
     position: absolute;
     height: 204px;
+    width: 100%;
   }
   .promo__text-box {
     position: absolute;
