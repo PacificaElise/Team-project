@@ -1,42 +1,111 @@
+@media only screen and (min-device-width: 1280px)
+    #drop-down_btn
+        display: none
 @media only screen and (max-device-width: 1280px)
+    #drop-down_btn
+        display: none
+
     .footer-top
         &__container
             grid-template-columns: repeat(3, auto)
+
         &__shopping
             grid-area: 1 / 2 / 2 / 3
+
         &__more-link
             grid-area: 1 / 3 / 2 / 4
+
         &__blog
             display: none
+
 @media only screen and (max-device-width: 968px)
+    .top-bar__icons
+        width: 40%
+
+    #drop-down_btn
+        display: none
+
+    .hotdeals__img > img, .goods__img > img, .products__hover, .products__img > img
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: scale-down
+
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text-block
+            width: 80%
+        &__form
+            width: 80%
+
     .footer-top
         &__container
             grid-template-columns: repeat(2, auto)
+
         &__shopping
             grid-area: 1 / 2 / 2 / 3
+
         &__more-link
             display: none
+
 @media only screen and (max-device-width: 768px)
+    .header
+        margin: 0 10px 0 10px
+    .top-bar__icons
+        width: 40%
+
+    #drop-down_btn
+        display: none
+
+    .products__block_hover
+        top: 30%
+        left: 30%
+        right: 25%
+
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text-block
+            width: 80%
+        &__form
+            width: 80%
+
     .footer-top
         padding: 40px 32px 48px
+
         &__container
             justify-content: center
             grid-template-columns: auto
             grid-template-rows: repeat(3, auto)
             grid-row-gap: 0
+
         &__shopping
             grid-area: 2 / 1 / 3 / 2
 
         &__socnet
             grid-area: 3 / 1 / 4 / 2
+
         &__item
             margin: 22px 0
+
         &__item:first-child
             margin-top: 0
+
         &__item:last-child
             margin-bottom: 0
+
         &__socnet
             margin-top: 50px
+
         &__link
             text-transform: uppercase
             font-weight: 700
@@ -44,39 +113,64 @@
     .footer-info
         &__logo
             text-align: center
+
         &__phone
             order: -1
+
     .footer-info__address,
     .footer-top__list
         margin-top: 64px
         align-items: center
+
     .hide-mobile
         display: none
+
 @media only screen and (max-device-width: 375px)
     .footer-bottom
         padding: 11px 0
+
 @media only screen and (max-device-width: 375px)
     %ruleimg
         position: relative
-        top: 0
+        bottom: 0
         left: 0
         width: 100%
         height: 100%
-        object-fit: contain
+        object-fit: scale-down
 
     =font($fz, $lh)
         font-size: $fz
         line-height: $lh
 
+    .header
+        margin: 0 10px 0 10px
+
+    .top-bar
+        &__icons
+            width: 40%
+
+        &__search
+            display: none
+
+    .middle-bar,
+    .lower-bar
+        display: none
+
+    #wishlist_place
+        display: none
+
+    #drop-down_btn
+        display: flex
+        align-self: center
+
+    .btn
+        max-width: 124px
+
     .hotdeals
-        overflow: hidden
         margin-bottom: 60px
 
-        &__img
-            margin: 70px 26px
-
         &__block
-            margin: 53px 54px 53px 0px
+            margin: 30% 10% 20% 10%
 
         &__title
             +font(0.875rem, 1.17)
@@ -84,12 +178,14 @@
         &__link
             +font(1.25rem, 1.17)
 
+        &__btn
+            margin: 0px
+
     .screen2__title
+        +font(1.5rem, 1.17)
+
         display: block
         margin-bottom: 25px
-
-    .goods
-        display: table-footer-group
 
     .products
         display: table-header-group
@@ -99,6 +195,9 @@
         &__rating
             display: none
 
+        &__img
+            height: 100%
+
         &__wrapper
             margin: 0px 0px 96px 26px
             position: relative
@@ -106,15 +205,14 @@
             height: 100%
             display: flex
             justify-content: center
-            overflow: hidden
 
         &__slider
             position: relative
-            max-width: 375px
             height: auto
+            overflow: hidden
 
         &__items
-            width: 600%
+            width: 300%
             height: 100%
             display: flex
 
@@ -129,8 +227,8 @@
             bottom: 0px
             left: 0px
             right: 0px
-            height: 30%
-            justify-content: end
+            height: 25%
+            justify-content: space-around
             color: white
             background-color: #B7B79A
             opacity: 0.6
@@ -138,17 +236,17 @@
 
         &__nav
             position: absolute
-            bottom: 26px
+            bottom: -50px
             width: 100%
             z-index: 2
             display: flex
             justify-content: center
 
         &__nav > label
-            height: 8px
-            width: 8px
+            height: 9px
+            width: 9px
             border-radius: 8px
-            margin: 6px
+            margin: 4px
             cursor: pointer
             background-color: #C4C4C4
             opacity: 0.5
@@ -168,11 +266,13 @@
         &__hover-bar
             display: none
 
-        &__tool-bar
-            display: none
+        &__price
+            +font(1.25rem, 1.17)
 
     .products__img > img
         @extend %ruleimg
+
+        object-fit: fill
 
     .products__block > a
         +font(1rem, 1.17)
@@ -184,24 +284,33 @@
         margin-left: 0
 
     #s2:checked ~ .s1
-        margin-left: -20%
+        margin-left: -15%
 
     #s3:checked ~ .s1
-        margin-left: -40%
+        margin-left: -30%
 
     #s4:checked ~ .s1
-        margin-left: -60%
+        margin-left: -45%
 
     #s5:checked ~ .s1
-        margin-left: -80%
+        margin-left: -60%
 
     #s6:checked ~ .s1
-        margin-left: -100%
+        margin-left: -80%
 
-    .goods__card_dark
-        display: none
+    .goods
+        display: table-footer-group
+        margin: 0px 0px 90px 0px
 
-    // promo banner section
+        &__card_dark
+            display: none
+
+        &__cards
+            grid-template-columns: 1fr
+
+        &__block
+            margin: 20% 7% 15% 7%
+
     .promo
         grid-area: promo
         position: relative
@@ -328,3 +437,64 @@
 
         &-link
             display: none
+        &__img > img
+            max-width: 70%
+
+        &__text-box
+            position: absolute
+            width: 192px
+            height: 139px
+            left: 38px
+            top: 36px
+            background: rgba(255, 255, 255, 0.9)
+
+        &__text-wrapper
+            width: 152px
+            height: 95px
+            margin: 22px 20px
+
+        &__title
+            padding: 0
+            margin: 0
+            font-size: 1.25rem
+            line-height: 1.44rem
+            font-weight: 700
+            text-transform: uppercase
+
+        &__description
+            visibility: hidden
+            display: none
+
+        &__button
+            height: 48px
+            width: 124px
+            font-weight: 700
+            font-size: 0.875rem
+            text-transform: uppercase
+
+        &__link
+            text-decoration: none
+            color: #323334
+
+        &__button:hover
+            display: none
+
+        &__link:hover
+            color: #fff
+
+        &__price
+            display: none
+
+        &__price-old
+            display: none
+
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text-block
+            width: 80%
+        &__form
+            width: 80%
