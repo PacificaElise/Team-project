@@ -13,6 +13,9 @@
             display: none
 
 @media only screen and (max-device-width: 968px)
+    .top-bar__icons
+        width: 40%
+    
     .hotdeals__img > img, .goods__img > img, .products__hover, .products__img > img
         position: absolute
         bottom: 0
@@ -32,10 +35,26 @@
             display: none
 
 @media only screen and (max-device-width: 768px)
+    .header
+        margin: 0 10px 0 10px
+    .top-bar__icons
+        width: 40%
+
     .products__block_hover
         top: 30%
         left: 30%
         right: 25%
+
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text-block
+            width: 80%
+        &__form
+            width: 80%     
 
     .footer-top
         padding: 40px 32px 48px
@@ -83,6 +102,8 @@
     .hide-mobile
         display: none
 
+    
+
 @media only screen and (max-device-width: 375px)
     .footer-bottom
         padding: 11px 0
@@ -100,24 +121,20 @@
         font-size: $fz
         line-height: $lh
 
+    .header
+        margin: 0 10px 0 10px
+
     .top-bar
+        &__icons
+            width: 40%
+    
         &__search
             display: none
 
     .middle-bar,
     .lower-bar
         display: none
-
-    .subscribe
-        height: 157px
-        margin: 0px 0px 77px 0px
-        display: flex
-        flex-direction: column
-        align-items: center
-        &__text-block
-            width: 50%
-        &__form
-            width: 50%  
+ 
     .btn
         max-width: 124px
 
@@ -270,56 +287,66 @@
         grid-area: promo
         position: relative
 
-    &__img > img
-        max-width: 70%
+        &__img > img
+            max-width: 70%
 
-    &__text-box
-        position: absolute
-        width: 192px
-        height: 139px
-        left: 38px
-        top: 36px
-        background: rgba(255, 255, 255, 0.9)
+        &__text-box
+            position: absolute
+            width: 192px
+            height: 139px
+            left: 38px
+            top: 36px
+            background: rgba(255, 255, 255, 0.9)
 
-    &__text-wrapper
-        width: 152px
-        height: 95px
-        margin: 22px 20px
+        &__text-wrapper
+            width: 152px
+            height: 95px
+            margin: 22px 20px
 
-    &__title
-        padding: 0
-        margin: 0
-        font-size: 1.25rem
-        line-height: 1.44rem
-        font-weight: 700
-        text-transform: uppercase
+        &__title
+            padding: 0
+            margin: 0
+            font-size: 1.25rem
+            line-height: 1.44rem
+            font-weight: 700
+            text-transform: uppercase
 
-    &__description
-        visibility: hidden
-        display: none
+        &__description
+            visibility: hidden
+            display: none
 
-    &__button
-        height: 48px
-        width: 124px
-        font-weight: 700
-        font-size: 0.875rem
-        text-transform: uppercase
+        &__button
+            height: 48px
+            width: 124px
+            font-weight: 700
+            font-size: 0.875rem
+            text-transform: uppercase
 
-    &__link
-        text-decoration: none
-        color: #323334
+        &__link
+            text-decoration: none
+            color: #323334
 
-    &__button:hover
-        display: none
+        &__button:hover
+            display: none
 
-    &__link:hover
-        color: #fff
+        &__link:hover
+            color: #fff
 
-    &__price
-        display: none
+        &__price
+            display: none
 
-    &__price-old
-        display: none
+        &__price-old
+            display: none
 
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text-block
+            width: 80%
+        &__form
+            width: 80% 
 
         
