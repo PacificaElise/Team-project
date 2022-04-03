@@ -319,9 +319,16 @@
 
     .promo
         grid-area: promo
-        position: relative
+        margin-bottom: 47px
+        height: 204px
+
+        &__img
+            position: relative
+            width: 100%
+
         &__img> img
-            width: 50%
+            position: absolute
+            height: 204px
 
         &__text-box
             position: absolute
@@ -377,14 +384,17 @@
     .top-rating
         grid-area: top-rating
         margin-left: 16px
+        margin-bottom: 77px
 
         &__items
             display: grid
             grid-template-columns: minmax(300px, 1fr)
             gap: 2.18rem
+            padding-left: 16px
 
         &__title
             margin-top: 5px
+            margin-bottom: 24px
             font-weight: 700
             font-size: 1.5rem
             line-height: 1.75rem
@@ -396,9 +406,6 @@
             grid-template-areas: "top-rating__image top-rating__item-details"
 
             max-width: 350px
-            margin: 0
-            padding: 0
-            border: 1px solid black
 
         &__image
             grid-area: top-rating__image
@@ -415,7 +422,6 @@
         &__item-details
             grid-area: top-rating__item-details
             padding-top: 5px
-            border: 1px solid blue
 
         &__item-name
             font-size: 1rem
@@ -432,6 +438,7 @@
         &__item-rating
             height: 15px
             padding-bottom: 19px
+
     .plain-like
         display: none
 
@@ -440,59 +447,6 @@
 
     .primary-button
         display: none
-
-        &-link
-            display: none
-        &__img > img
-            max-width: 70%
-
-        &__text-box
-            position: absolute
-            width: 192px
-            height: 139px
-            left: 38px
-            top: 36px
-            background: rgba(255, 255, 255, 0.9)
-
-        &__text-wrapper
-            width: 152px
-            height: 95px
-            margin: 22px 20px
-
-        &__title
-            padding: 0
-            margin: 0
-            font-size: 1.25rem
-            line-height: 1.44rem
-            font-weight: 700
-            text-transform: uppercase
-
-        &__description
-            visibility: hidden
-            display: none
-
-        &__button
-            height: 48px
-            width: 124px
-            font-weight: 700
-            font-size: 0.875rem
-            text-transform: uppercase
-
-        &__link
-            text-decoration: none
-            color: #323334
-
-        &__button:hover
-            display: none
-
-        &__link:hover
-            color: #fff
-
-        &__price
-            display: none
-
-        &__price-old
-            display: none
 
     .subscribe
         height: 157px
