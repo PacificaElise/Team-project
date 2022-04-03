@@ -319,8 +319,8 @@ body {
 .goods__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(636px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(636px, 1fr));
+  -ms-grid-columns: (minmax(375px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   gap: 23px;
 }
 

@@ -32,6 +32,13 @@
             display: none
 
 @media only screen and (max-device-width: 768px)
+    =font($fz, $lh)
+        font-size: $fz
+        line-height: $lh
+
+    .hotdeals__link
+        +font(2rem, 1.17)
+
     .products__block_hover
         top: 30%
         left: 30%
