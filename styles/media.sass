@@ -1,4 +1,10 @@
+@media only screen and (min-device-width: 1280px)
+    #drop-down_btn
+        display: none
 @media only screen and (max-device-width: 1280px)
+    #drop-down_btn
+        display: none
+
     .footer-top
         &__container
             grid-template-columns: repeat(3, auto)
@@ -13,6 +19,12 @@
             display: none
 
 @media only screen and (max-device-width: 968px)
+    .top-bar__icons
+        width: 40%
+
+    #drop-down_btn
+        display: none
+
     .hotdeals__img > img, .goods__img > img, .products__hover, .products__img > img
         position: absolute
         bottom: 0
@@ -20,6 +32,17 @@
         width: 100%
         height: 100%
         object-fit: scale-down
+
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text-block
+            width: 80%
+        &__form
+            width: 80%
 
     .footer-top
         &__container
@@ -38,11 +61,29 @@
 
     .hotdeals__link
         +font(2rem, 1.17)
+    .header
+        margin: 0 10px 0 10px
+    .top-bar__icons
+        width: 40%
+
+    #drop-down_btn
+        display: none
 
     .products__block_hover
         top: 30%
         left: 30%
         right: 25%
+
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text-block
+            width: 80%
+        &__form
+            width: 80%
 
     .footer-top
         padding: 40px 32px 48px
@@ -106,6 +147,27 @@
     =font($fz, $lh)
         font-size: $fz
         line-height: $lh
+
+    .header
+        margin: 0 10px 0 10px
+
+    .top-bar
+        &__icons
+            width: 40%
+
+        &__search
+            display: none
+
+    .middle-bar,
+    .lower-bar
+        display: none
+
+    #wishlist_place
+        display: none
+
+    #drop-down_btn
+        display: flex
+        align-self: center
 
     .btn
         max-width: 124px
@@ -258,54 +320,187 @@
     .promo
         grid-area: promo
         position: relative
+        &__img> img
+            width: 50%
 
-    &__img > img
-        max-width: 70%
+        &__text-box
+            position: absolute
+            width: 192px
+            height: 139px
+            left: 25px
+            top: 23px
+            background: rgba(255, 255, 255, 0.9)
 
-    &__text-box
-        position: absolute
-        width: 192px
-        height: 139px
-        left: 38px
-        top: 36px
-        background: rgba(255, 255, 255, 0.9)
+        &__text-wrapper
+            width: 152px
+            height: 95px
+            margin: 22px 20px
 
-    &__text-wrapper
-        width: 152px
-        height: 95px
-        margin: 22px 20px
+        &__title
+            padding: 0
+            margin-top: 22px
+            font-size: 1.25rem
+            line-height: 1.44rem
+            font-weight: 700
+            text-transform: uppercase
 
-    &__title
-        padding: 0
-        margin: 0
-        font-size: 1.25rem
-        line-height: 1.44rem
-        font-weight: 700
-        text-transform: uppercase
+        &__description
+            display: none
 
-    &__description
-        visibility: hidden
+        &__button
+            margin-top: 24px
+            margin-left: 12px
+            height: 48px
+            width: 124px
+
+            font-weight: 700
+            font-size: 0.875rem
+            line-height: 1rem
+            text-transform: uppercase
+
+        &__link
+            text-decoration: none
+            color: #323334
+
+        &__button:hover
+            display: none
+
+        &__link:hover
+            color: #fff
+
+        &__price
+            display: none
+
+        &__price-old
+            display: none
+
+    .top-rating
+        grid-area: top-rating
+        margin-left: 16px
+
+        &__items
+            display: grid
+            grid-template-columns: minmax(300px, 1fr)
+            gap: 2.18rem
+
+        &__title
+            margin-top: 5px
+            font-weight: 700
+            font-size: 1.5rem
+            line-height: 1.75rem
+            text-transform: uppercase
+
+        &__item
+            display: grid
+            grid-template-columns: 198px minmax(149px, 1fr)
+            grid-template-areas: "top-rating__image top-rating__item-details"
+
+            max-width: 350px
+            margin: 0
+            padding: 0
+            border: 1px solid black
+
+        &__image
+            grid-area: top-rating__image
+
+        &__overlay-wrapper
+            display: none
+
+        &__overlay
+            display: none
+
+        &__icons
+            display: none
+
+        &__item-details
+            grid-area: top-rating__item-details
+            padding-top: 5px
+            border: 1px solid blue
+
+        &__item-name
+            font-size: 1rem
+            line-height: 1.5rem
+            padding-top: 10px
+            padding-bottom: 14px
+            margin: 0
+
+        &__item-price
+            font-size: 1.25rem
+            line-height: 1.44rem
+            margin-top: 0px
+
+        &__item-rating
+            height: 15px
+            padding-bottom: 19px
+    .plain-like
         display: none
 
-    &__button
-        height: 48px
-        width: 124px
-        font-weight: 700
-        font-size: 0.875rem
-        text-transform: uppercase
-
-    &__link
-        text-decoration: none
-        color: #323334
-
-    &__button:hover
+    .shopping-bag
         display: none
 
-    &__link:hover
-        color: #fff
-
-    &__price
+    .primary-button
         display: none
 
-    &__price-old
-        display: none
+        &-link
+            display: none
+        &__img > img
+            max-width: 70%
+
+        &__text-box
+            position: absolute
+            width: 192px
+            height: 139px
+            left: 38px
+            top: 36px
+            background: rgba(255, 255, 255, 0.9)
+
+        &__text-wrapper
+            width: 152px
+            height: 95px
+            margin: 22px 20px
+
+        &__title
+            padding: 0
+            margin: 0
+            font-size: 1.25rem
+            line-height: 1.44rem
+            font-weight: 700
+            text-transform: uppercase
+
+        &__description
+            visibility: hidden
+            display: none
+
+        &__button
+            height: 48px
+            width: 124px
+            font-weight: 700
+            font-size: 0.875rem
+            text-transform: uppercase
+
+        &__link
+            text-decoration: none
+            color: #323334
+
+        &__button:hover
+            display: none
+
+        &__link:hover
+            color: #fff
+
+        &__price
+            display: none
+
+        &__price-old
+            display: none
+
+    .subscribe
+        height: 157px
+        margin: 0px 0px 77px 0px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__text-block
+            width: 80%
+        &__form
+            width: 80%
