@@ -386,10 +386,16 @@
   }
   .promo {
     grid-area: promo;
+    margin-bottom: 47px;
+    height: 204px;
+  }
+  .promo__img {
     position: relative;
+    width: 100%;
   }
   .promo__img > img {
-    width: 50%;
+    position: absolute;
+    height: 204px;
   }
   .promo__text-box {
     position: absolute;
@@ -444,6 +450,7 @@
   .top-rating {
     grid-area: top-rating;
     margin-left: 16px;
+    margin-bottom: 77px;
   }
   .top-rating__items {
     display: -ms-grid;
@@ -451,9 +458,11 @@
     -ms-grid-columns: minmax(300px, 1fr);
         grid-template-columns: minmax(300px, 1fr);
     gap: 2.18rem;
+    padding-left: 16px;
   }
   .top-rating__title {
     margin-top: 5px;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -466,9 +475,6 @@
         grid-template-columns: 198px minmax(149px, 1fr);
         grid-template-areas: "top-rating__image top-rating__item-details";
     max-width: 350px;
-    margin: 0;
-    padding: 0;
-    border: 1px solid black;
   }
   .top-rating__image {
     -ms-grid-row: 1;
@@ -489,7 +495,6 @@
     -ms-grid-column: 2;
     grid-area: top-rating__item-details;
     padding-top: 5px;
-    border: 1px solid blue;
   }
   .top-rating__item-name {
     font-size: 1rem;
@@ -514,60 +519,6 @@
     display: none;
   }
   .primary-button {
-    display: none;
-  }
-  .primary-button-link {
-    display: none;
-  }
-  .primary-button__img > img {
-    max-width: 70%;
-  }
-  .primary-button__text-box {
-    position: absolute;
-    width: 192px;
-    height: 139px;
-    left: 38px;
-    top: 36px;
-    background: rgba(255, 255, 255, 0.9);
-  }
-  .primary-button__text-wrapper {
-    width: 152px;
-    height: 95px;
-    margin: 22px 20px;
-  }
-  .primary-button__title {
-    padding: 0;
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.44rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  .primary-button__description {
-    visibility: hidden;
-    display: none;
-  }
-  .primary-button__button {
-    height: 48px;
-    width: 124px;
-    font-weight: 700;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-  }
-  .primary-button__link {
-    text-decoration: none;
-    color: #323334;
-  }
-  .primary-button__button:hover {
-    display: none;
-  }
-  .primary-button__link:hover {
-    color: #fff;
-  }
-  .primary-button__price {
-    display: none;
-  }
-  .primary-button__price-old {
     display: none;
   }
   .subscribe {
