@@ -319,8 +319,8 @@ body {
 .goods__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(375px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  -ms-grid-columns: (minmax(425px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
   gap: 23px;
 }
 
@@ -562,7 +562,7 @@ input[name*=s] {
 
 .promo__img {
   height: 510px;
-  max-width: 100%;
+  width: 100%;
   background-image: url("../images/promo-banner.jpg");
   background-size: cover;
 }

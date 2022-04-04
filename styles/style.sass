@@ -210,7 +210,7 @@ body
 
     &__cards
         display: grid
-        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr))
+        grid-template-columns: repeat(auto-fit, minmax(425px, 1fr))
         gap: 23px
 
     &__card
@@ -396,7 +396,7 @@ input[name*=s]
 
     &__img
         height: 510px
-        max-width: 100%
+        width: 100%
         background-image: url('../images/promo-banner.jpg')
         background-size: cover
 
@@ -520,7 +520,6 @@ input[name*=s]
         top: 40%
         left: 10%
         margin: 0 auto
-
         width: 150px
         height: 56px
         border-radius: 30px
@@ -535,8 +534,10 @@ input[name*=s]
 
     &__image:hover
         opacity: 0.7
+
         .top-rating__overlay-wrapper
             visibility: visible
+
         .top-rating__overlay
             visibility: visible
 
@@ -647,9 +648,11 @@ input[name*=s]
 .footer
     grid-area: footer
     background-color: #323334
+
 .footer-top
     padding: 50px 72px 72px
     background-color: #323334
+
     &__container
         display: grid
         grid-template-columns: repeat(4, auto)

@@ -1,6 +1,7 @@
 @media only screen and (min-device-width: 1280px)
     #drop-down_btn
         display: none
+
 @media only screen and (max-device-width: 1280px)
     #drop-down_btn
         display: none
@@ -39,8 +40,10 @@
         display: flex
         flex-direction: column
         align-items: center
+
         &__text-block
             width: 80%
+
         &__form
             width: 80%
 
@@ -61,8 +64,10 @@
 
     .hotdeals__link
         +font(2rem, 1.17)
+
     .header
         margin: 0 10px 0 10px
+
     .top-bar__icons
         width: 40%
 
@@ -80,8 +85,10 @@
         display: flex
         flex-direction: column
         align-items: center
+
         &__text-block
             width: 80%
+
         &__form
             width: 80%
 
@@ -131,11 +138,7 @@
     .hide-mobile
         display: none
 
-@media only screen and (max-device-width: 375px)
-    .footer-bottom
-        padding: 11px 0
-
-@media only screen and (max-device-width: 375px)
+@media only screen and (max-device-width: 425px)
     %ruleimg
         position: relative
         bottom: 0
@@ -143,6 +146,9 @@
         width: 100%
         height: 100%
         object-fit: scale-down
+
+    .footer-bottom
+        padding: 11px 0
 
     =font($fz, $lh)
         font-size: $fz
@@ -313,41 +319,38 @@
 
         &__cards
             grid-template-columns: 1fr
+            gap: 0
 
         &__block
             margin: 20% 7% 15% 7%
 
     .promo
-        grid-area: promo
-        margin-bottom: 47px
-        height: 204px
-        width: 100%
+        display: grid
+        margin-top: 24px
+        margin-bottom: 0
 
         &__img
-            position: relative
-            width: 100%
-
-        &__img img
-            position: absolute
+            display: grid
+            background-image: url('../images/promo-banner.jpg')
+            background-size: cover
             height: 204px
             width: 100%
 
         &__text-box
-            position: absolute
+            position: relative
             width: 192px
             height: 139px
-            left: 25px
-            top: 23px
+            margin: 2.25rem 2.25rem 1.81rem 2.25rem
             background: rgba(255, 255, 255, 0.9)
 
         &__text-wrapper
+            position: absolute
             width: 152px
             height: 95px
-            margin: 22px 20px
+            margin: 1.37rem 1.25rem
 
         &__title
             padding: 0
-            margin-top: 22px
             font-size: 1.25rem
             line-height: 1.44rem
             font-weight: 700
@@ -357,11 +360,10 @@
             display: none
 
         &__button
-            margin-top: 24px
-            margin-left: 12px
+            margin-top: 1.5rem
+            margin-left: 0.75rem
             height: 48px
             width: 124px
-
             font-weight: 700
             font-size: 0.875rem
             line-height: 1rem
@@ -384,33 +386,36 @@
             display: none
 
     .top-rating
-        grid-area: top-rating
-        margin-left: 16px
-        margin-bottom: 77px
+        display: grid
+        margin: 60px 0 77px 16px
 
         &__items
             display: grid
             grid-template-columns: minmax(300px, 1fr)
             gap: 2.18rem
-            padding-left: 16px
 
         &__title
-            margin-top: 5px
-            margin-bottom: 24px
             font-weight: 700
             font-size: 1.5rem
             line-height: 1.75rem
             text-transform: uppercase
+            margin-top: 0
+            margin-bottom: 24px
 
         &__item
             display: grid
-            grid-template-columns: 198px minmax(149px, 1fr)
+            grid-template-columns: 130px minmax(149px, 1fr)
             grid-template-areas: "top-rating__image top-rating__item-details"
-
             max-width: 350px
+            margin: 0
+            padding: 0
 
         &__image
             grid-area: top-rating__image
+
+        &__image> img
+            height: 158px
+            width: 126px
 
         &__overlay-wrapper
             display: none
@@ -423,7 +428,7 @@
 
         &__item-details
             grid-area: top-rating__item-details
-            padding-top: 5px
+            padding-top: 3px
 
         &__item-name
             font-size: 1rem
@@ -441,6 +446,9 @@
             height: 15px
             padding-bottom: 19px
 
+        .item2, .item3, .item4, .item6, .item7, .item8
+            display: none
+
     .plain-like
         display: none
 
@@ -450,13 +458,69 @@
     .primary-button
         display: none
 
+        &-link
+            display: none
+
+        &__img > img
+            max-width: 70%
+
+        &__text-box
+            position: absolute
+            width: 192px
+            height: 139px
+            left: 38px
+            top: 36px
+            background: rgba(255, 255, 255, 0.9)
+
+        &__text-wrapper
+            width: 152px
+            height: 95px
+            margin: 22px 20px
+
+        &__title
+            padding: 0
+            margin: 0
+            font-size: 1.25rem
+            line-height: 1.44rem
+            font-weight: 700
+            text-transform: uppercase
+
+        &__description
+            visibility: hidden
+            display: none
+
+        &__button
+            height: 48px
+            width: 124px
+            font-weight: 700
+            font-size: 0.875rem
+            text-transform: uppercase
+
+        &__link
+            text-decoration: none
+            color: #323334
+
+        &__button:hover
+            display: none
+
+        &__link:hover
+            color: #fff
+
+        &__price
+            display: none
+
+        &__price-old
+            display: none
+
     .subscribe
         height: 157px
         margin: 0px 0px 77px 0px
         display: flex
         flex-direction: column
         align-items: center
+
         &__text-block
             width: 80%
+
         &__form
             width: 80%
