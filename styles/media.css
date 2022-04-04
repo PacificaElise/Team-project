@@ -84,6 +84,10 @@
 }
 
 @media only screen and (max-device-width: 768px) {
+  .hotdeals__link {
+    font-size: 2rem;
+    line-height: 1.17;
+  }
   .header {
     margin: 0 10px 0 10px;
   }

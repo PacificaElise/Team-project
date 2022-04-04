@@ -55,6 +55,12 @@
             display: none
 
 @media only screen and (max-device-width: 768px)
+    =font($fz, $lh)
+        font-size: $fz
+        line-height: $lh
+
+    .hotdeals__link
+        +font(2rem, 1.17)
     .header
         margin: 0 10px 0 10px
     .top-bar__icons
