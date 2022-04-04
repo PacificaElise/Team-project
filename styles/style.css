@@ -378,7 +378,7 @@ body {
   display: grid;
   -ms-grid-rows: 75% 25%;
       grid-template-rows: 75% 25%;
-  min-height: 560px;
+  height: 560px;
 }
 
 .products__hover-bar {
