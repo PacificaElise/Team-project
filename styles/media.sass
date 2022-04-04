@@ -325,28 +325,32 @@
             margin: 20% 7% 15% 7%
 
     .promo
-        grid-area: promo
-        position: relative
+        display: grid
+        margin-top: 24px
+        margin-bottom: 0
 
-        &__img > img
-            width: 50%
+        &__img
+            display: grid
+            background-image: url('../images/promo-banner.jpg')
+            background-size: cover
+            height: 204px
+            width: 100%
 
         &__text-box
-            position: absolute
+            position: relative
             width: 192px
             height: 139px
-            left: 25px
-            top: 23px
+            margin: 2.25rem 2.25rem 1.81rem 2.25rem
             background: rgba(255, 255, 255, 0.9)
 
         &__text-wrapper
+            position: absolute
             width: 152px
             height: 95px
-            margin: 22px 20px
+            margin: 1.37rem 1.25rem
 
         &__title
             padding: 0
-            margin-top: 22px
             font-size: 1.25rem
             line-height: 1.44rem
             font-weight: 700
@@ -356,8 +360,8 @@
             display: none
 
         &__button
-            margin-top: 24px
-            margin-left: 12px
+            margin-top: 1.5rem
+            margin-left: 0.75rem
             height: 48px
             width: 124px
             font-weight: 700
@@ -382,8 +386,8 @@
             display: none
 
     .top-rating
-        grid-area: top-rating
-        margin-left: 16px
+        display: grid
+        margin: 60px 0 77px 16px
 
         &__items
             display: grid
@@ -391,23 +395,27 @@
             gap: 2.18rem
 
         &__title
-            margin-top: 5px
             font-weight: 700
             font-size: 1.5rem
             line-height: 1.75rem
             text-transform: uppercase
+            margin-top: 0
+            margin-bottom: 24px
 
         &__item
             display: grid
-            grid-template-columns: 198px minmax(149px, 1fr)
+            grid-template-columns: 130px minmax(149px, 1fr)
             grid-template-areas: "top-rating__image top-rating__item-details"
             max-width: 350px
             margin: 0
             padding: 0
-            border: 1px solid black
 
         &__image
             grid-area: top-rating__image
+
+        &__image> img
+            height: 158px
+            width: 126px
 
         &__overlay-wrapper
             display: none
@@ -420,8 +428,7 @@
 
         &__item-details
             grid-area: top-rating__item-details
-            padding-top: 5px
-            border: 1px solid blue
+            padding-top: 3px
 
         &__item-name
             font-size: 1rem
@@ -438,6 +445,9 @@
         &__item-rating
             height: 15px
             padding-bottom: 19px
+
+        .item2, .item3, .item4, .item6, .item7, .item8
+            display: none
 
     .plain-like
         display: none

@@ -553,23 +553,39 @@ input[name*=s] {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: promo;
-  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  margin-top: 15px;
 }
 
-.promo__img > img {
+.promo__img {
+  height: 510px;
   width: 100%;
+  background-image: url("../images/promo-banner.jpg");
+  background-size: cover;
 }
 
 .promo__text-box {
-  position: absolute;
   width: 545px;
   height: 338px;
-  left: 147px;
-  top: 109px;
+  margin-left: 8.56rem;
+  margin-right: 8.56rem;
+  margin-top: 6.67rem;
   background: rgba(255, 255, 255, 0.9);
+  position: relative;
 }
 
 .promo__text-wrapper {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 312px;
   height: 217px;
   margin-top: 61px;
@@ -588,8 +604,8 @@ input[name*=s] {
 }
 
 .promo__description {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   font-size: 1rem;
   line-height: 1.375rem;
   font-weight: 300;
@@ -628,7 +644,7 @@ input[name*=s] {
 .promo__price-old {
   position: relative;
   display: inline-block;
-  bottom: 0.3rem;
+  bottom: 0.22rem;
   line-height: 1.19rem;
   padding-left: 26px;
   font-size: 1rem;
@@ -639,7 +655,7 @@ input[name*=s] {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: top-rating;
-  margin: 0 72px 91px 72px;
+  margin: 0 10px 21px 72px;
   max-width: 100%;
 }
 
@@ -648,13 +664,14 @@ input[name*=s] {
   display: grid;
   -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  row-gap: 1.5rem;
+  row-gap: 1.27rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
 }
 
 .top-rating__title {
-  margin-top: 81px;
-  margin-bottom: 72px;
-  margin-left: 10px;
+  margin-top: 83px;
+  margin-bottom: 51px;
   font-weight: 700;
   font-size: 2.125rem;
   line-height: 2.5rem;
@@ -671,6 +688,7 @@ input[name*=s] {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  max-width: 405px;
   max-height: 308px;
   margin: 0;
   padding: 0;
@@ -758,7 +776,7 @@ input[name*=s] {
 
 .top-rating__item-name {
   font-size: 1.125rem;
-  line-height: 1.45rem;
+  line-height: 1.456rem;
   padding-top: 0;
   padding-bottom: 14px;
   margin: 0;
@@ -766,7 +784,7 @@ input[name*=s] {
 
 .top-rating__item-price {
   font-size: 1.5rem;
-  line-height: 1.75rem;
+  line-height: 1.7rem;
   margin-top: 0px;
 }
 
@@ -780,7 +798,7 @@ input[name*=s] {
   border: none;
   width: 371px;
   height: 51px;
-  margin-top: 65px;
+  margin-top: 87px;
   margin-left: 35%;
 }
 
