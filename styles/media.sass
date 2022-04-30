@@ -61,23 +61,41 @@
     =font($fz, $lh)
         font-size: $fz
         line-height: $lh
-
-    .hotdeals__link
-        +font(2rem, 1.17)
-
+    
     .header
         margin: 0 10px 0 10px
 
-    .top-bar__icons
-        width: 40%
+    .top-bar
+        &__icons
+            width: 40%
+
+        &__search
+            display: none
+
+    .middle-bar,
+    .lower-bar
+        display: none
+
+    #wishlist_place
+        display: none
 
     #drop-down_btn
-        display: none
+        display: flex
+        align-self: center
+
+    .hotdeals__link
+        +font(2rem, 1.17)
 
     .products__block_hover
         top: 30%
         left: 30%
         right: 25%
+
+    .primary-button
+        width: 35%
+        height: 51px
+        margin-top: 87px
+        margin-left: 35%
 
     .subscribe
         height: 157px
@@ -163,13 +181,6 @@
 
         &__search
             display: none
-
-    .middle-bar,
-    .lower-bar
-        display: none
-
-    #wishlist_place
-        display: none
 
     #drop-down_btn
         display: flex
@@ -325,7 +336,6 @@
             margin: 20% 7% 15% 7%
 
     .promo
-        display: grid
         margin-top: 24px
         margin-bottom: 0
 
@@ -511,7 +521,7 @@
 
         &__price-old
             display: none
-
+            
     .subscribe
         height: 157px
         margin: 0px 0px 77px 0px

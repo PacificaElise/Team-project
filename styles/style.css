@@ -64,6 +64,147 @@ body {
 #wishlist:hover {
   fill: #FE1313; }
 
+  #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
 .main-title__link {
   font-size: 1.75rem;
   line-height: 1.77;
@@ -214,7 +355,7 @@ body {
   .products__item {
     display: grid;
     grid-template-rows: 75% 25%;
-    min-height: 560px; }
+    height: 560px; }
   .products__hover-bar {
     position: relative;
     top: 42%;
@@ -320,23 +461,30 @@ input[name*=s] {
 
 .promo {
   grid-area: promo;
-  position: relative; }
-  .promo__img > img {
-    width: 100%; }
+  margin-top: 15px; }
+  .promo__img {
+    height: 510px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url("../images/promo-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; }
   .promo__text-box {
-    position: absolute;
-    width: 545px;
-    height: 338px;
-    left: 147px;
-    top: 109px;
+    width: 35vw;
+    height: 70vh;
+    grid-column: 2/6;
+    grid-row: 2/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.9); }
   .promo__text-wrapper {
-    width: 312px;
-    height: 217px;
-    margin-top: 61px;
-    margin-left: 130px;
-    margin-right: 103px;
-    margin-bottom: 60px; }
+    margin: 5% 20% 5% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
   .promo__title {
     padding: 0;
     margin: 0;
@@ -345,26 +493,24 @@ input[name*=s] {
     line-height: 2rem;
     text-transform: uppercase; }
   .promo__description {
-    margin-top: 16px;
-    margin-bottom: 16px;
     font-size: 1rem;
     line-height: 1.375rem;
     font-weight: 300;
     color: #323334; }
   .promo__button {
-    height: 48px;
-    width: 124px;
-    font-weight: 700;
     font-size: 0.875rem;
-    text-transform: uppercase; }
-  .promo__link {
-    text-decoration: none;
-    color: #323334; }
+    line-height: 1.17;
+    align-self: start;
+    text-transform: uppercase;
+    width: 124px;
+    height: 48px;
+    text-align: center;
+    background-color: transparent; }
   .promo__button:hover {
     background-color: #323334;
-    border: 0; }
-  .promo__link:hover {
-    color: #fff; }
+    color: #ffff;
+    border: 0;
+    transition: all 0.2s ease 0.1s; }
   .promo__price {
     margin-top: 27px;
     font-size: 1.75rem;
@@ -373,7 +519,7 @@ input[name*=s] {
   .promo__price-old {
     position: relative;
     display: inline-block;
-    bottom: 0.3rem;
+    bottom: 0.22rem;
     line-height: 1.19rem;
     padding-left: 26px;
     font-size: 1rem;
@@ -381,16 +527,18 @@ input[name*=s] {
 
 .top-rating {
   grid-area: top-rating;
-  margin: 0 72px 91px 72px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 21px 72px;
   max-width: 100%; }
   .top-rating__items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    row-gap: 1.5rem; }
+    row-gap: 1.27rem;
+    column-gap: 2rem; }
   .top-rating__title {
-    margin-top: 81px;
-    margin-bottom: 72px;
-    margin-left: 10px;
+    margin-top: 83px;
+    margin-bottom: 51px;
     font-weight: 700;
     font-size: 2.125rem;
     line-height: 2.5rem;
@@ -399,6 +547,7 @@ input[name*=s] {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    max-width: 405px;
     max-height: 308px;
     margin: 0;
     padding: 0; }
@@ -455,13 +604,13 @@ input[name*=s] {
     margin-left: 32px; }
   .top-rating__item-name {
     font-size: 1.125rem;
-    line-height: 1.45rem;
+    line-height: 1.456rem;
     padding-top: 0;
     padding-bottom: 14px;
     margin: 0; }
   .top-rating__item-price {
     font-size: 1.5rem;
-    line-height: 1.75rem;
+    line-height: 1.7rem;
     margin-top: 0px; }
   .top-rating__item-rating {
     padding-bottom: 15px; }
@@ -469,9 +618,9 @@ input[name*=s] {
     text-transform: uppercase;
     background-color: #323334;
     border: none;
-    width: 371px;
+    width: 35%;
     height: 51px;
-    margin-top: 65px;
+    margin-top: 87px;
     margin-left: 35%; }
     .top-rating .primary-button-link {
       text-decoration: none;
@@ -666,3 +815,5 @@ input[name*=s] {
   margin-top: 0; }
 .footer-info__email {
   margin-bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */
